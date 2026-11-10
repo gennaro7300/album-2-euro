@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f2547">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Album 2€">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Album 2€</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAUXElEQVR42uWbeZBdR3XGf919t7e/Gc14JEtoLFnCWowlSzYyshTsmM1lO8aQEFyG4IQUWXGqQlFZqAQXlQpxAgkkNgFDUSZYhApJqASTUOBYFJYXGbwJsLxII2tB1jbb2+/S3fnj3vc04xlJo60C5Fa90mjevHfvOX36O9/5zmnBLJe1VgohTPazA1zTbHZuiHVytdH2Yostg3DAAoL/26v7DDYBUVNK7HaV84hfCL7pwHeFEAkgrLWia9PUS8xivBJCaIB2mPxGFEUftMauzeXzGKPROsEai7X2/972KT4QQiCkQCkHKRXtVgvpyKddKe/O5fwvvtq2WR2wdetW59prr01qtdoqofzP5nLeZp1Yoii0UgojQHTvxU/hZS1WgLVgjbHS83yhHEG7HT7sKn4rCIKdXRtnOKDrncnJ5k1Sqfv9wC9HnU4ipJCA5GfzMtZY4wWBE4bRpLD2PcVi8MDUSBBTjW80OjdaIf4DrBRYLYRQ/Bxc1lptEQqEEdbePNUJogt41tqV9Wbn+0KIvMRahJD8PF3WGoMQ1tpWqRBcKYTYaa2VshsBYxP1L/l+UBBY83NnPIAQUmCN7/uF0fH6l6y1CkAKIUyz2X5PtVq6MgrbyfkMe2stxliMMWht0kwy5b3e67z5QKgo7CR9faUra832e4QQRlhr3WOjtSfLleKlOklM1zPnDIWMxWKRQuA4Do6jUDLF3jgxxHGMlBKZpTEBaGPRWmcOEghxTp2glePIWr3+o4G+ynpRr7ffpLHfUUJYKc/drYwxSCnxfQ8lBVGcMDY+ybHRcY4dG+fY2DgrL7mYvr4q+/a/gu95OI4iCDxKxQKlYh7f8zDGECdJ9+FPGFniNB7dGGu1scJ33Tc5cZK8o1AsksShAdS5MFwpRbGQIwxjdj6/m2d+uJMXXtrDK4eO0Gi2MNowPlnj9ttu4VffeSPWGCwQhhGdMGL/wcNorcnnAgbn9dHfV0EKQRTH0yJCG0MxH/CZLQ9yzYaVrFi6gE4Yn9IZUgrj+YFqNhrvdIy1VxmjyUjOWe1vgGIhR7PV4TtbH2Xrw9vZvWc/URjjOArXdXBdFydQaGvwPA+wKKXS1fc9qggslihOqNWb7DtwiH0HDrFg/gDzLxjAWkMca4y1KClIEsNntzyI7zmsXr6IKO7guoqTBbMAYYzGWnuVY429SOsEcRbE1hiD57kopXj40Sf5+gMPsmfvgcwon8DzMnCzGRBOAUELxtre/421KZcDquUifZUSzVaHg4eOcfDQMZYtWUR/tYzMcOS/vvsMu/cd5r+2PsN7b95EX6WAtZZWOzohdlgQRmusZdhBULLGIqU4owjQ2lAs5Dh6bIz7tnydx3/wLK7jUC4WegZpa09aylhjscIeL2tSWkuSpCvtuQ7DixYwWW/w3At7qFZKPP38Qb7234/zw+f30V8t8vgzu3jDr3yUX7hyBbfetJE1K4fR2szqhDQCDBZTdoQQjk2rCU43/2hjKBVz7Pjxi9zz+a9w9OgoxcxwbcycvkMKgZQCYy0miwIh0ni0UyIszjBh6fBCXhzZz7M/ehFHKYSQWKtP4NoT7wGLRQjpOGca9lqnxm977Cnu+fwWjLWUSgW0NidKPz1wEkL0MKMdRrRaHarVEr7nYa2h2erQCaNe1dWNDK01sYVLli1m0fx5SAm7Dkzwzt/9FG/Z/Dq++qkP4vvuKbfA1Ms5G+Mf2f4Mf/+5L+M6Dq5SsxrfNTxJYjqdDmEnRGvNkaNHEVaz5d++zcf+6nOsWHkxy5Ys4oo1K9iwbhXDi+bTCSMarTYyI6apIyytdgfleoyNTzJQ9lh20XxuuPZyfN9lfLKB6zrMNaM7ZwJ4hULAj57bxT333o/jOCgpMbOEvJSSKAqp1Wq0mk20TkPVcRziOAag2WpzcP8rjDfbbH3kKb6w5RssGJrHW6/ZwPvedT2vW7mUyXqLRCdIIUllCIFOEvqrZVqtFtdeuYxrNqwiThI81zktTiBPN9W5rsvo6AR333s/WhscpVLkftWqA4yNjfLKwYPUazWstSnjk3LadlBKInyPYiFPX7VMtVJkstbki1/9Jjff/sfc+ckvorUmF/jESZJmkvQmxImmUCjwjrdcgdURYoo51p4HB6Srp7jvK1/nyNFRgsCfsfJSSuI45tArB5kYH09/p9TJRIwpqVGnTnUU86plrLX8/b3/wrs+8GeMvHyQcjFPHOtU+bAWAYRRzNBgP3v3H6JWb6CkRBuLo0RKw+05coAxhnw+4NHHn+KxJ56mWCz0Qnqq8WEYcvjQK4RhiNPFWGtPm1QlWiOAgXl97HhuN7f+9kd59rndqRMSnWFCyhks0Fet8PyuvQSBS6ng8S/f+THFgo/nqpPefs4OUErRbLb59298B9dxp1Vy3bCPoogjhw+htUZKOeNvzkTujJOESrnAsfFJfvMPP86ul39CLueTpEQGCyRaUyjkiKKY5146wD1f/T5/c982Pn3/o4xOtlBSnNAJcq6rnws8Ht3+NC/v+wmB780wzlrLsaNHSZLktEBoLleSaIqFHIePjvOhO/+BMIxQQqY1RPYcidZUyiX2HTh8Esn3DB0gpaQTRjz0vcdxHGeG8VJKJiYmCMMOUspzVbZOA8sk0VTLBZ58Ziefue/rFIt5km7azUiU67nkfcX7blzNn7z/F/iD2zYyr5JHG3tCTiDnUs/7vsdLu/ey5+UDBL43DfXT0A+p1yanGd99+C7AdRneqSs1iZKSJEkIo4gk0SiV6gVxoqlUSnz5a9/iR8+PkMv5U4SVdD8IpXhpz0He/bbLqDc6RLE+KSGSc9mJSgqe3rGTKJpZagohqNVq07KBECJlbXGM67rk83k8zyOO45NuEaUkrXaHiVqDSrnE8ML5lEt5xicbtDohQgiUkkzWGnzl376N5zqZc1Ms6JbQk/Um7U6UplhxlkRISkkYJbzw4giOq14V/oIkSdImRLb6KetLKBaLrFq9mv7+flzXJUkSJicm2LlzJ7XJyRlOUEoyNlFnzepl/Okd72XD+lUUC3lq9Sbbtu/gr+/Zwou79+P7HoV8joceeZIPHLyZ/kqZKEl1AmssjuOQJJpmq035JNR8ThFgrcVRivHxSQ4dOYbrONNSmpSCTrtNkiTTADPwfTZefTXDw8MUCgUA8vk8CxctYtPmzZQrFZJEH68NlKLRavP6tSt56F8/zTtueCML5w9SKRV4zYUXcOstb+LiixYShim/9zyHQ0fG+P7TOwkCD6O76dD2Fm2y1phTJnJO0WlBOYrR8QmazTauOxMAO2FnRipcsXIlg4ODtNttdjz7LHv37mPx4tew+tJLCYKAJUuW8NKuEYRIq0EbJwgEn7nrQ5RLBVrtkHu//B888tgzXLXhMpYsXsA3H3yMYraiSqWGPfnDF/ilt23OxNQMBjJFqtnqzCkbOXPZ/0ePjRPHMZ7nzlBy43g6Liil6HTajIyM0Gq1GBkZwRjDyMgIS5Yuxfd9giDofcZYi2ctb79+M2tWL8Nay7e2Ps6f3/UF8vmAR556jla7g+cejz5rU0a6Z+9BOp2wV8lbLMam26ndCefEQ+ZUDDWazRl8vxvuZgobtDaVt0Z2j7DrpV0IIfA8jyRJGBwcJJfLIYRgYmIirQ2EpNUO+dxn7+R977qeRGscpbjpzVcz9sJ/4ziKh7fv4PpbPzQt+rr3GR2v0Wx1cF0n1RKy96SQJHFy9g7ofrzTCSHj3jN1fjNLveAc5w+dDpVKhfVXXEGQyzE6OsqekRFc18nIS4G/+OjdgOD2X70egN/5o0+w/annGOivcHRsclZDpBB0wpAwitJs8Kq/0cZizanb9/J8NUBSx3UYGBxk0+bNVKtVGrUaT2zfTpT1ApSSTNabvPWGN/LWa1/fQ+zfvO0m7v74H3LTWzfx4u595HPBTCd028C2u1BdEDwOhmddDXZ9F/g+CDHja9OevJyVxYVhyKJFi9i0aROlUomJ8XG2bdtGvV7Hzdik1oZ84FMq5nlx936kklnGCHhpZD87nttNHCfUm60ZAoc1lsD3pnGBrDbCpBonQgpOpfPNCQMKhfysCku6iookEzem8oBly5ezdu1ahBAcPnyYxx97jFarlXKCKbihlOSuj93DPz/wXXZu24Lve8Rxwkc+fi9HXjnK2nWruPCCeTz48A8o5AOMSRllojXz+srkAp8winrg2CVhgeeciywg0MYyONA3awoUQuC6Lp12u0dz4yhi8UUXsW79eqIw7Akg69avx3FSEbPdbvHggw/1qLZaMMiho2N86vNf40/veC/rL7uEkSe+xou79nLx0teAtay97tc5cmwc13UQIq0Nliy+EM9zabU7vZyfLoAmKBfO3gFCgE40A/19FAp52u0OSsppQRX4AXVq0zJDuVxOmx7ZAw0NDSEz2cxxHCYmJqYDVhRTrZb5i7+9j2qpyG+972YK+YDLL7ukp0GuWb2Mb3z7EXzfTTm/FKxdvbzXTO02VslK6GIhd/ZZQAhBnCT09VVYMDTIC7v2oAIfjO2tXpDL4ThOr+BxXJefHDhAq9XCGJOqut30laG31sdZYPc9gcDzXD74kb9jy79/m80bLqO/r8LYeI3/2fYkO196mVIxjzGWJNEMDfRz+eteS6ud1gjdXoIxBmsM1XIxvf8posCZC6L7nsOK1y7lxzt3IQIxBWVT7p3L56nXaj3Nb3JigrHRUU5UiTizqPFp+KbdoB88+zyPPrGj957ve+QCP8v/acF045s3smBogIla/TjlFRDFCZ7nUizkT1kHzBEEUxxYe9lKHvjW1lmFkHK5TLPROA5sjoM6SctBnUAjtBa0NRTyOUqFfK9NZKbwjUQbyqUCv3zTLxJFESLLh9ZalJS02x2GBvtwXCerHc6SB0gpCMOIZUuHWTK8iE4YTcsI1lo8z6dUrvQectqwwwlep1KgEq1JEk2ide97HUdRqzV41y9dx4plwzTbHYRId6S16b9xnLBgaGDaNjtrIpRWeC7XbN4waz1vjKFareIHwazM8FxcjlLU6k3Wve4Sfv3WG6g3mkghUziy6QBGu92hXMrT31cmSfS5k8WllLQ7ERs3rGP4NRf22lavBszBwcFZJbNzYXyz1eaCgT7u/PD78RxnuhyW7f9ms8XS4YWndX8593aYplTMcctNb55RAR5vmnhcMDQfpdScEHiufYhao0l/X4VP3vlBFi8cSvN+Jrd1936j0aKvWmL+Bf3E8dyF2Tk7QEpJs9Vh0xvW84YNl9NoNGeAmTEG3/cZmr8A3/ePCyWn6Yiu9AUwOjbJ6kuW8I93fZgVy4apNVo91O+yfm0MnTDk0hVLSbQ5f60xAJ0k3H7bLVwwOEAnY3qvdoLrusxfcCHVvr70d1qfsDkiMoO7xVEqiGomJtOs8v7bbuIzd32YRRcOUmu0UiLWNd6kaXF0bIKVy4cpzdKsOafNUSHSYad5/VV+/wO38Zef/GxWw0uMsTOqwf7+eRQLRWr1Gu1WqxcRU6UqbQw2jGi22mmGkYILBvq58c0beeeN17Jy+TD1RjvtCE8x3hiL6yiOjU2ycP4AS4YXzintnXV3WEpJs9nh0lXL+L0P3Man//GfwKbjb6/OAMYYXM9jYGCQJEmy9ng7ixIvLbTyOS5cfCHLlg+zeOEQa1YvZ+3q5SwYGiCKIsYnG+kQhZi+8o6TCiLVcp41ly6fVbE+Lw7oVnD1ZpurN1yOQHD3vfcThhFB4M8IwR5QKUWxWKRYLCKFwAvyCOXy9re9nlXLh6lUir0yudUOmajVEQiUFL1U1+X9ylGMjk1SLRd4/brVc05558wBAEpK6o02GzespVwucs+9Wzh85FhvRGY2xtjj/VmFCOC4afR0OhFN3clGV0Rvm3SNNxnaa2M4cnSMhfMHWHPpa0mS5KyObUhrbSI4/fmgXiQ02qxasYyPfeQOrrpyLY1GiyiKe92cU9YaxvTmiaQUvc9MZY3drNBothmfSLPCussuOT5AeSYHLBBYaxMJ1IUU2DNyQdbNabWplEt86I7f4A9+99dYMH+QWr1JO8y6Od1RWHEC3dEyraS15ri+n5KwkGOjExRyHpuvWsOSxRkZO/Ous03HckXNEUK8rJTTZ3VyxodgpJTESUKUJLzx6itYt2Y1j2x/ku9t+z4jLx/ozQq4roNSqtf/64GWSKmCyLQGYwxxnNBuh8RxTLmUZ/1lr2VocB6J1oRRdFYkS4CVyhGIaK+jlHxMSXV5rBN71t1coNFs4ziKt123iWs3bWDXnn08s2MnO1/YzSuHj9JstQk7IZP1BlEUY40ljGK0Tgen40Rjs8HLocEqC4YG6O9Lp0W6hp8tw7RglVQoJR8V7Xb7ujC2Dyp5foelwyhhfGKS0bGJ3uuS5UsoFArs2rOfQj5HLvAp5HNUy0WKhRyO66CzqvBkw9JnMMGeDUuL67Jx+ckny5XS+RmXz/a1FBLHUTPG5ZM4Rjlqejtdp8B4Xsfla40fDvSXr3CEEHGj0fqE48gvRaG252rAYWoDg96QQ5Iid5bPZVdIjZNZp8zO9aRJVtRZP/BELhd8QggRC2utBMTYeP2xYql0ZRx1fm4OS812eMr1A9WoN57orxY3Avb/3aEpY2zLLwZXBt1DU5nxSgix06LfDcIahLSzTyD/zK68QUgQFqPfnRmvhBBGdoHBWqsqxeIDJkluARqeHyhrbAKYn2HbjTE28fxACSHqEvv2SqU47eCknIqOW7dudSqVwn96jnhDHCffC/KB4zieNGnrVYvUGVZkGsdP1Stb7OwZtTHWOo4nc/nAiePoe1azsVAIvrF161Zn6vnhUxyeDm+PI3OHsfbyXC5IeXum0v40Hp7u9ipFJo9LIZ72c+6nfcf50pwOT08/Po9NT51bJ0n4xXbYvkFrfZXWZtha+oQQ3k/T8XlrbSQE40rJvUqpx3N+7puOw0NCiARrs0PfM4/P/y+vvYiSNcBJ/AAAAABJRU5ErkJggg==">
+<style>
+:root{
+  --navy:#0f2547; --navy-2:#1b3a6b; --navy-3:#2c5291;
+  --bg:#f5f6f8; --card:#ffffff; --line:#e1e4ea;
+  --grey-1:#eceef2; --grey-2:#c9ced8; --grey-3:#8a93a3; --grey-4:#5b6475;
+  --text:#18202e; --gold:#c9a227;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(15,37,71,.06),0 4px 14px rgba(15,37,71,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{-webkit-tap-highlight-color:transparent;font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.45}
+button{font:inherit;cursor:pointer}
+a{color:var(--navy-3)}
+
+/* ---------- header ---------- */
+header{-webkit-user-select:none;user-select:none;padding-top:env(safe-area-inset-top);background:var(--navy);color:#fff;position:sticky;top:0;z-index:30;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.hwrap{max-width:1400px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;min-width:max-content}
+.logo{width:42px;height:42px;border-radius:10px;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAvSUlEQVR42u19d4BcV3X37953X5k+O1u0uyq7ktW7q2RZ7sZgXDEQMGACgQDJR0gwJE4oCaRQPgjGBOIPAoEAAWwSjAvYGHfLXVaxel+11fbdqa/dd+/3x3szO7vaNtKstDJ6MLIt7a5253fuOeee8zu/Q3ASj5SSAqCEEF72ewaAZR5wKRFime3wpVLKGULIsIQMU0KYlDj7jPAQAggpOQEpUEoKhJAjqsa2Ekm3KArWAXidEGKVvdfsC1+A+OIXiTjhv/MEgScB8B4A9PT0xBO1tVeAi7e5Hl/rOnyObhiUewKO48J1XQhPQAgBibPojw0IAaUUVKFQVRWapoIpFLZlCVVj+1WFrQOj96d7e5+uq6vLBHgoAAQhRE66AUgplSLwUsrpQoiPutz7oMLUGZ4Astk8HMcGIRAqY1JRKKGEEEIJKCEEhJxFeew3GEJKKYX/T88T0uWcSAmqazqisQgUCnjcPaJr6n8C+C4hpH04NlU3gPJTf+zYsUgqVffXIPgLhbFUb18Wjm0LXVeFrqmUMYVSSoo/T/ErFP9/9hkPkMFfSudFCAnOPWE7rrBtl2q6TmtTMXic90oh/623t/tr06dPL1TqDchEYz0hfpzJ5awbdJ19lSrK4s7ufkgheSikKYauEUJ8wOXZID9JOYLvQKUELNuRpml7hCqsoT4JKbxtHud3Gobxm+GYjfXQCbp8sX79etV13a/rhvpQJmctbu/o4SFdk6maKDN0jUgpIYQ8C/6kRofB99jQNZKqibGQrspjHT08k7WWKEx92HXdr61fv14lhIjAG5y4ByjGlJ6enhmJRPIXClMuOXS0S4QNHdFIiBa/qbPP6fUKAJDLm6Jg2pg1o4EKTzw3MGDdVlcXOTpeXkDGAz+bzS4xjNCDXJA5Xd09PBmPMk1jEOIs8FPpoZTAcTgGMjneUF/HFCr325Z5UywW2zaWEZCxwbeXGIbyVMHm9Zl0lqdqYowQcvbUT2FvIKVEb3+GJxJxFjHUrrRZuKp2DCMgoyV8+Xx+hqbpzxUstzWbzfGamjgjZ13+mWEEkOjvz/J4PMZCOmvLZNKX1dbWHh4pMaQjXPWIlFKnivIAF6Q1ncnxVE2cQZ5N8M6URBESSNXE2UA6y7kgreFI7NcHDhwwAmzJWLcASgjx8qZ9l6Hr53V29fBUTYzhLPBnZEEplYyxzq4ebujqedOamv41CAF0xBBQjBH5vHVzOKz/+nB7D0/EwkxV2dmTfwaHA8flyGQLfGZzHSvY9s0Rw3iwPB8g5a6/q6srHEskt5im28I5l/FYiJ7N9s/820EmWxCMqSQUUttCurYMgAlAEkIkLXP9Ih5P3hnStdZ8wfRi0bPgvxEeISRi0TDNF0wvpGuzC5ZzZ5AIUgRJAQUgc7lcvcK03ZmcGdNVhehBde/s88YIBbbtSNvxZDwWynrcmR+NRrsBkGI/Xyqq+jHd0BIe58L4AwNfBjec0usN+PMZukY8jwvd0BKqqn8saBZRAkhy7FhHOJao2VUw3elMgTB0jZ7pBuB/+0Ovrn4zhZTKp8U/03UNBIONLE/43AUhRLGPCVJWdp1MoCbr7yCEwLIdwT2QkM6O5bID85uamgoMILKmzr2CKWx6f39WRFKxMxZ8P2fx30RFUcAYg6IQH1wAruuBcw7OPQjhQVVVeJ7Alu17QQiByhRomopoNIxwyICuaWBMASUE3POCzxNDavDVfBhT4Hli0oxL1zWa78uIVLKu2dDrLgfwWwYAknu3cUmlrquCglBxBjnBIiCKoiAU0qBQAk9IpDM5dHf3oqunDx2dPejo7EZPbz9s24Fl29BUFX97x0eg6zr6BjKwLQdSSricw3FcyAAQQ9eQTMTQ1FCL2tokIiGjdL3yPK+qxtDTl0VNIjJ5NwIC6LoquCeIFPI2AL9lUspoLm9dbhYKRNOYciZEwGKsppQiHA6BEiCTzWPv/oPYtecA9uxrw5GjnegfSMN2XAghfK9AKSil8IRAPBqBkBKMUVx07mIAfglVCAHOPViWjYJlI5c30T+QwYYtu8C5h3BIR3NjPVpnNSOZiAEAHMeB50kUSTCVPgolyJsO/unb9+NLn34XIiEN3iTcwKSU0FSmZLIFEtLZFVLKCDNN91wAzY5jy0goSqay9y8Cr6oMuqbCtBxs3roTr23cii3b9qCzqxu244JSClVlYIqCSDhU/hUA+O5cVVkpVzBNG0JKgAxWxjRNg27oqKtJYvasZgghkMub6OtLo72zG7v3HUIsGkbLzGbMbmlGJGzAdlxw7lVkCJ4QCBkGXt1yAD976AW875a1uOT8+cgVLCiUVj0vUlVGcoWcDBms2XXdCxiluJQynSrU9CghipiCFiB9nhw0VYWuMXT3DuDFVzbi+Zc2oO3gETguh66pAYlSG2IsxRBRzryVw/sahKCIWTF5FFIAHOCSDyaLmooZ06dh1qxGmKaNjs5e7DtwBFt37MWMpgYsXjgHqWS8MkOQfgh55JlNyGYKeOSZTVh7wYJJ485R3xMKVdUVIfhaJqVY4nEPjCmYqjGeMYaIrqKjqxePP/0inn3+VXT39EFlDLquQdf1Ide4EzCxIe0OWfqlvMPmfy+e50EGoM2aMQ0tM5swkM7iwMGjePTxF9HUWIuVyxagJhGDadljZvZS+nlG30AOj63bgmRNFI+t24JPfeh6hAwNQshJ4dAypoBzD4xiIZPAfMdxoVBK5FTragGIRkIYSOfw64cfx+NPPY/e/jQMXUcsGjlJ0Ec1hRL4xa8rA7Rk4C38bEHCdlxICYRDBlYuX4BCwcKefYfwm8fWYU7rdJy3fCE0TYVlOUO8waAxCSTjETz10nbsbetAMh7B3rYOvLRpL956xUoMZPJQFD9vIVX7+QCFUuK4LhRNWcCERLPLXeiqMmX42p4QMHQNhBA88cxLuP+hx3G0vROhkF5K3oa79mrUDFD+j2Hgl3+wLGfxE/97KZgWKKVYvnQe5rTOwLad+/Crh5/CRectxjmzZ8K2HXDPA4JTH4n4uUnfQA4/fWAdBhMQgp8+sA6rV85FKhkFAJiWAzcIKbQKLoFSQmzXhabSZpLLm/3ZnJUMh3WpMnpak8DiaY5GQmg71I6f3vsgNmze7sd+Xa0K6ZQEd/pYJIwvfeFTiEbCyGTz45/8MkOQ5UZT+jQ/jEghQRQCXVXR2d2H17ftQX1dDdauWoFI2AAA5AoWXtywBw8/tRFPvrgNXb0ZaEHXtXjFbKiN46qLl+CGK8/FxefOQzRiQEqJgumcVFgghMDlXBZMh0TD+gDJ5gpOJmeq8WgICqWn7RIohISiUBiGhsefegH/fe9DyObyiETCVXXzIxtArnTIRzr5ww1hNPCHsncFVFUFIcDr2/agfyCDaY3NePzFHXj0mU040tELzgUMXQVjynEVS849WLYLxihmNdfh0gsX4LYb12DlwhZwzzvh2gMJPGwmZyIeDTkMIKr0s5rTCL6ArmtwHRf/7we/wO+ffB6GoSMSCVfV1Y8VAoZ4gFFO/vjgD/47pRSu6xeUVi5dgK7uXvzyt+vw+o52RMLG4N9ZSfCuAkDFPMY3OKKx0x7vPYFI2EB3bz/uvufH2L5zL+Kx6IhXuEkNPZDw07vRY/6Y4I/wccVJmYJloaYmgY++9614fetuGCEDih7F/Y+9iidf2IauvkpDQPXSNXa6wY9GQtjXdhh3ffuH6OzqRSIeK5VYqwzzqCx4Smmp1uBf82SQ4KGscTTOyR8hoSy6dUIIXJeDEILFi+Zh/cbtqEsR3P3596NvIIePf+FHeOTZzUjGwxhIF3DdFSvw7X/4wJAkMJMzq5YEVjQZNHnge4hGQ9i9tw1f+tfvorunH5FIuOrgExJM21IFNKislecU/qmyYDsOFIUiEYsiVZNAMhaBrqmQUpaaRyXw5bCTL0cHX8rBYo+QAp4QWH3hMvSlc7jvwSeRSkZx+y1rIUulX4n33bwWqWQUA5k8snnTL1krtOrgnzYP4J/8MPbsPYiv3vUfyJsmQoZeNfBJcG/2weNwbBuu64+pex6H4zjIR6OghCCXN/GOD38OhYKF2lQcs6ZPQ+vMJiyYOwtLFszBjKZ6JGI6XO4hX7DgeZ4PBCHjnvzhuUGxgmBZNi46bwk2bN6Jh373HK5YeyHmtTZiz8EOzGttxOqVc2FaDlTGJn2Ymp2OO344bODgoXZ87e7vI18woesavJOK9xIg/gkRQsAyTZiFAmzbCkD3hrh7vyXMS2AdPdaNnr409h+keOHVrUH1UUFtTQJzZ8/Aecvm45rLLsD5KxYiHo0hVzBh2y4oJcEwxvjgDykyEQLTsnHeigV4af02bN6yAzdecz7+4ev34tr3LUMqGUU2Z0JRJt9Bs1N9z9c1Ff0DaXzjOz/EQDqLcMg4CfAlCKEgxAc1m88hn8vBcZxSQlUMAQhYAcNJIX7jR0VI16BqailXKIaGVzfuwPOvbMH3f/YQli6Yg5uvuxRvu+4yNDfWI5crwHbcElATAV+WXccKpo3zVy7Cth27EdMl6uqTePOly/2vc4rKcuxUgk8phecJfOuen+Boeyei0chJuX1KFR/4bAa5XBY8SLT8Fx12b5LjNpuEEEPu44qiIBJhiAae5fXt+/Dq5p34z589jHfedBVuf/ub0dRYh3QmByH8dvBEwC+/Mbiui6WL5qGzJ43LLpiL85fOgWU5Ve8EnvYkUEoJw9Dw45//Gq9v23VS4BdBzmQyOHasHQP9ffC4B0qVspMtqzSOLUo3g3BYRyoZR2d3P776bz/FTR/4W/z4l4/6HsTQwbmH4aWDUcEvHnIJuNzDmguX45pVczGQzoCxUzeLQU/lde+pZ1/G7554DvFY9ITBLxZYOjqOobenGx7nUBQWAC8nvVrpBVyC2poEOjp7ccc/fAvv/bMvYs+Bw6hJxuF5nt9KHgd8WZZAep6Apqk4d+k8PLVuPTj3QE6RlA49JXFf13D4aCd+eu+DMILW7YmCn81m0XGsHZZp+l2y0zCtLKUE9zxomopUIo51r7yOd37487j3gSeQiEcBGfATxwAfZf9OCODYDhrqU4jHolj38iaEDP2UjOCfEg+gUIKf/OIBpNNZqCfg3oouv6+3Bz3dXZBClO70OM0ta+55SMQjsGwbn/jsXfji1/8ToZAOSslgcjsG+MVwQSiBZTtYOH822jt6sP/gURiGNqxHMFjDqJaDoJNd44+EDTy97hWs37jVL/RUmPH75VSgp6cb6XTaB36KKY15noCiKEjGo/j3H/4Kn/7Ct6EoFExRIDwxLvjF/5JBUWn+3Ba8/NpWcM5LoUAI/wb17IaDeHbDQeiaWhUPQSfzdDDG0D+Qxa8e/D00VT1hV93V3YlcNjslTv1YP68nBGprE/jF/Y/jE5/7Zknvr0hXHxX8smqh67qor6uBqmrYtGW3n1x6fgWRUoqHntmJh57Z6dczhDhpI6CTO42i4rePPYP2Y13Qde0EXD9FT083CvnclAa//OHcQ21tAg/9bh0++5XvIqRrQ0rCI4I/bDDEcVzMmzMTu/YdQjqTQzwaQiIWxsGjfXhtezte296Og0f7kIyFEY3oU68OIAMC57GOHjzxzIsIhfSKBx4opejr6w1OvoIz6eHcQ21NAj//1e+RSibwd5+4HelMtqwXMTL4JbqY5yEcNpBMxLFp624IrQb3PboZG3ceQ950AAB/9Df34vzFzbjp8oW49LzWE46KdNIMQGN47Knn0T/g32sruaJRSpHL5ZAeGDhjTv5xRuB5qEnGcc9/3Y8HHn0WyXisRAkbC/yAcQrbcdEysxEHj3Qgm81PWlmYTQb4qqqiq7sf6158DSFDh6wg8fNdoIO+3p6gmoczeigzbOj4p2/8CIvnz8bM6dNgWTZIOUF0JO6hBKQUCBk+B7K1nuE7n7kJB4704t133gcAuO//vgst01MAfI7AlMkB/Ho/w7qXXkNPb79/7avwa/T19cLzPJzpssJFT9jdO4B/vutHZXIsY9DP5CB3wXU5pjc34PWdbRjI5DF7Ri3OX9yM8xc3o2V6CgPZAnJ5e2olgVRRUDAtvPjyRqgqQyWDJkXXbxYKZ6zrH+mKmIhH8NQLG/HAo88hHouAe95gMjgC+LIURgRi0QgURcHho52QErjhsgW48fKFfseS0hMeR5sUAxBCwNBU7Ni9HwcPt0PXKsv8OedI9/efsjIoTiHh1dBVfOeHv0JHV59P/xJjgD8sP6ivTeLQ4WOQUuLS81pw2XktwQgcmXp1AEoJ1m/YCresiFFJmdfl7gkZwPAWLyZZcYNSUuIDTCQUhHQd+9qO4Be/fhyRcAie8MYEv+gHXM6RqkmiL51BJpuDqihlHIQpVglUFIZ0Jo9tO/ZUdPp9GjRHLpuZsOsvB7zYsfO8ofP71TQISv3KHgA4jouCaaNg2nBcFwQAU5QxT6QnBCLhEO7/7TM41tULjamBIMUo4BdnFIMhGZWpOHS0s+KwesoMQAgBXWM4cPAIOrt6UYm8HCEE+VyuxNKZqMEUiR+GYSAWiyEWi8EIhUo3Cdd1T9oIfLEJinzBRG/fAKSUaG6sw9KFc7BkwWxMq0/B9Tz09qVhms6o1zW/Kaai7fAxPPS75xEO674XGDaLONhBDIxAEkgpkKpJ4PDRzqqXwVm13f+OXfvguG5FlT8hBfL53ITBchwHNTU1aGltRW1tLcLhcMlzCCFg2zb6+vpw5PBhdHV1BaRQWnElklIK7nkYSOex5sJleOdNV+GaS89Hy4xGhEI6pAQKBRP7Drbj8WdfxU//5zFs2bEfiXh4RAaylD776JEnX8Rtb7va/56GzCMMBb+YJnJPIB6LYP/BfliWXVVyKKtmXORcYO/+QxWxWQghsC0LjjMxvrvneVi8ZAkWLlwIpqoQgdsvgqsoCjRNQzKZxOzZs3H48GFs3LABnHMoilIR+I7jQtMY/u1fPomPfeCWUggofxLxKM5bNh/nLZuPj//J2/Gt7/8P/uXuH/ueYJjBCeHf7XftPYitOw/g3GXzkS+YoIQef/LLP88TpWpqfzqLaXU1cFxelRBHqzVZoygK0pks2ju6oFbQ+CGEoFAojPvxRbe/fMUKLF/u8+Yc2wbnfMgASTEfKIaA1tZWXLxmDRRFmfCgSZHHb+gaHvzxV/HxD70dSuANilO9nPuaQV7QqLEdF+GQgSsvORfc5aO+sZQSFEwbT657DUxRIIUcEfzy6SQJn05naBo6u3qhKErVqC+0WiPVKmPo7ulHOp2Bokzc3QohYNnWmNZMCIHrOJg+Yzrmz58Py7KGcP6LBlesQhaJIoQQmKaJxsZGLFq0aEh7dbwBOsd18cO7P4u1Fy0vDXX4HsDPCRhTwJjij28HtwIA+Mdv/Mg/nZSMpdKB9Zt3+aef0jHBL32ekIhGw+jpHTjuqnj6Q4CUUBSCnt4+OI6LcDg0odNWbH/ycZI1KSUIpTjnnLlDMuCiV9i8aRN6enpACEFNTQ2WLF0KXdchghaq4ziY1dKCvXv3wrHtMRelMEVBb38aH7n9Ztx47Rq4nJfkZEp5zp6D2LnnIBSmYG7rdCye3wqVMbz02jY8+dxriMcioza/pPDpXwePHMPRjh7MbG6Abbul3O74QVQ5SKcPGejt669qlbSqSWBXd29FhA8/W7f9YYsx8gYhBKLRKBKJxBA+P6UUGzdsQFtbW0kapre3F5ZtY82aNcOGT3XE43F0dnSAjPJ3UUrAhd/Ju/Pj74WU0p+YDo6cJwQ+8dlv4ie/fBSW7QIAImEDF6xYiM998o/xg589DNt2EQ4b8Dw56oAaC8Llzj1tOKd1OkzLBi32PUYAvzh2rmkqbMeF47h+GKjCdZBVc/Kus7unYjq767rjGokQAuFIBOFwuGQAjDFkMhl0dnYiFBoUggqFQuju6kImnUYimSx9PKEUoVBojAlBwHU5sv1pvOPWazGnpbnkQTwhoFCKz335P3DP3T9BuKkeuq4CErAdF0889TJeXL8VmqYiHo+M2/omBOBc4MChDtDywZKy/E9KOaRvIKQ/bs65B9OyEY9G4E0VAyCEwPMEenorb996Lh+3iqYoCrKZDF544QVIKUpkETeoA4zWjh0epsbyThLAnJZmpGviuPkta0uzAiTwAv3pLJ5+cSOWrFrmU72KTBzin+jDR7v8ohCZmDAUpQRHj3XBE6JEDx8J/MGQIMGYAkIo8nkTyUTspHQCqm4ARW09QgkmWqeUUsL1xk/MfLFjG4cOHkQ5658QEnANyg3RQyQSQTweD2IlKfUZMpnjK43FIs/yRXPw2L13gRCCcNgoS/oQuPoQHr/vm0OGP4QQUBSK17fvw7Xv+mSQ/E5Qp0dR0N7ZA9t2QCgZHfwSXzCQq6U+V6BaVU5WzWnf4gmYqGOSQlZ0NSvG+ZHEpMq/j4WLFkHTdbiO3ydXVRWdHR1IDwyAMTak4kjgG+//+eCtiEXDo/79msqgqSO/Xf913yPIZvOoTSWP9zyjJM2UUuTyZknXUIoyfdYRRtAHBap870amUiGIEgLb9SVWK6lS+Veficex0dx9cTbAcRwsX74cra2tQwpLnudh+44dI8q6cs9DPBbBI0++jPWv70IkZOBzn/xjhAy9dMoppfjlQ0/hiedeQzRsBCqe/vdi2y5+9ZtnEItFSqXdCSkVEALbccC5B02jY4IfMERKiS93edVKwqwqcm5BkaRS11QNFZAi+JxzrFi5AgsWLCyB79ffdWzcsAE93d3QRmlQUUrxs//9HdCbhtZcjzs//l6fyVSmI/DrR57Fz+75ERCpAYojYAoF4lHEo+Gg1FxZ2dyyHF/kMiiblxRKRpGdKU1GcV4SwCZnskJINXIPEbjOCy68ELNnzz4O/F07d2LPnj0l8IcbaDFvmNZQiw9+4nYkEzFoqnpcR/Hdt1yDGU31CIdC4J4HhVJ09fbj5/f/vjRNfEJ6PWXiP2OBL4FJ2d3FqrK6NFCw0CpcMEUI8e/kJzAnWCwCqaqKi1atQnNzM2zbHgL+nj17sHnz5jGHLRWFIpsr4LqrVuPLn/3YiN4BAG689hLceO0lQ/7s6/f8HAPpHGprEhOL/cPyH0PXwBgrjZGByDGmi31DKc4mVuP0V80DiOCq5p+ySiTL/P+dkNad6yISiWD16tVI1daWwC8KPe/Yvh1btmwZcksY65r5RzdfDe558LgHXT8+2XQ5L93TCCVoP9aDf73nFwG5Q1Qs1SYCrQQl6FIOLe+OICoxTDq3Wu6AVY8MopQ4ABOd0yWUVExrKvb6U6kUVl98MSKRyJCET2Uqtrz+OrZv3z7irWEkzl4sGsY/feNH+Ob37kVfXwaf+av347a3XVNKAEkgJfP2P/ks8qYFlTH0D2SQzRegqgyUkkDEcsI/hD82FwlB11Q4Q2ohI+sKyDJtIzblmkHBGJiha/5o9AQTQf8eX1nn0LZtNDY14dJLL0U4HC6RPgghUFUVmzZvws6dO2EYhq8VVKYIMrpos8SW7fvw2uZd2LZlN+578Mkhn+MJgZpEDBeuXIRXnngJr23ehUPtXf7PK/wWrcu9ysQaPYGmhlpomhokwnL0kx9sAxVCljzHoKjUlDEAirraFESFE0BMnbgTcmwHs+fMwZo1a8BUtdTdK+YDLzz/PLZu2RJcz2w4tg3HcfyXbYPz0cvO4bCOkKGjpiGFZ1/ahL0HjpSSTEp8N/3lz34Uf3Xnh8FUBZbloH8gC4VSXH/1Gvz2v7+GSy5ahlyuMD4fgvil3RlNDUFhSY4oKjHk6kv8K6uUEpFICJ4UVSkGVY8QAmBaQ23FrkkNMu6JtI0XLFyA5StWlDgAxTegyClIJJNYtXrVcR5FSr9c29/fj0OHDvmfR0YQfwhq/n0DGXz5Wz/BD+76O3+5BKOBbiDBXf/4CXzk9puxY08bVKZg4bxWzJs9AwCQzZn43ZMvj5udSQkoVEHLzMbBxVRjgO+Pj/s1B5UpFQ/bnLJrYEN9bUVsIH9wQh+3s1Xs88+bP7/E/im3fiEEEokEamtrR/w6xVtBW1sb2traxjw53POQTMTw4/sexVuvuRhvv/4KOC4vSbYJIbFoXgsWzWsZYjxCCrz5iotw0XmL8eqmnYhHRx6FJ8HsYE0yhoVzW4JWMBlbqh4SBBS240DXNGiaWuIoTBFSqL+oqb4uVRbTJp47sAkyiLjrDhF4LH95ngfLsmDb9ogvy7LG7TwOoXGHdHz4jq/isadfgab64BcHOrxgg1iREeT/ni8t9/k7PjBmfCaUwnFdtM5oRNO0WtiuC5Cx9hQUp4YpTNNCJBLyk8CpRAsn1KdQNdTXIpkY2oSZCPfO0I0JGYCqaVBVddSXpmljvsa7Eg41TAWuy/GOD38ed33vPpiWDaYoUCgNVtINMoIUSqFrKtLZPJ5at8GXth+1bO23nVcumefLwHhyiBD0cPCLzSBCgFzeRENtctja76nQDg7q7Yl4FNObp6Gru3fCvEApJcKRCDKZ9Lgf193VBd0wKo5/MuAPDAwMTNgwhfDn+jwhccfffws/+eWjeM+tb8Jlq1eidWYjwmEDTFH8bWUHjuDRp17G/zz8NHbsbkMiHh31ZxdCIhzScenFKwM3PtqU8NArIfcEXNdFQ32tf8CmGitYBtXAeee0YP3GrZXlAboOTdfg2CMzg4vZ+CuvvHLC2zWLjRRF8bUFJ5KtCiFBCZCqSWD77jb89Re+jXA4hJpkDJFwCJqmYiCdRU9fGpZpIRQykKqJj0oIoZSiYFpYsmA2Fs1rgWk5pSvzaCe/KG5pWTZUxlCTjMGtoooYq64MrMTC+XOgaZXJwVBCEAlHYVu9Y/5gE3XhlXYTx8vYPc/fFxgNqn7pTB59A9mS0Ru6hkjIKDGGx2ICuZzjTZddiHDIwEA6B1pGoD0OfAkIACqlyOXySMSjMAzd511UyQBoNUenHMfF7JYZaJpWP3F2TABMJBqdUNn2ZF4nO+BZvIczpkAP5GWLfQbueWOObJFA9GFmcwPefOUq5E3Lr4KOAX6xB0AIwUA6i1kzpmFKy8R5nodYNIyli+fBcSozAMYYorHYKVsSUY3dRqICw1IoRaFg4cY3rcW0hhQcxx1hTd1w8H3DMS0HQgjMmt4It4psoOpPBwf35AvOXVqxKpgQArFYHCpT8UZbXU8IgWnbaJ3ZhFuvvxz5vDWoFzQG+MVGVX86g7raBGKxCHiVDwit7lZKCstxMH/ubLTMbIbtVLbehDGGRE3NG84AaMDj+/B7b0RDXao0UTwm+GUNtYGBDGa3TC812qa0UqjwBMIhHasvWgHX5RVRxIr8/1A4fEaEgol1SSky2TzWXrQc1119MTLZ3OB2tjHARzAOlssVwBSKlhlNFYXV02YAfrLDccnq81GXSpboS5U8tanaqg0+nG7X7zgc9akkPvVn7ykRP8cH3yeMMIWis7sXc1qnIxTSMRl7nSfFAFzXxbT6FC5ZfZ4/9VJhf0DVNNTW1p3ZBhBslbFsB5/+8/dg9qwmmJZTkr4d6+SXSr+W381cNH82HNudlJ1BdNIs3+V401WXIBmPBb3yykJBJBpFIllzxoYCRikG0jl86D034NorViGdzpUGQccCv5j8qaqC9o5uzGmZjkQ8WjHl7PQbgONielMDrrxsFUzLglLhamIhBFI1NYjF4hVzDE47+ExB70AW77jxSvz5B25FJpcv84LjgB8UxvKmBcu0sGLJPDiOUxVBqFOqFeyzd1zc8JYr0DitbkjbsxKuYW1dHSLR6BnjCRSFoq8/g7dcuQp3fvx9KFj28EmIMcGXUoKpDIePHMPiBbMRj0fBuTjz9gUES4qRqkngbTe+acIKICM9dQ0NU75IVFQO6x/I4tbrr8A/3/kRf9+gJwLi68TAVxQFff0ZKJRi5dL5viQMJWfmwghKKfIFC1ddthrnn7cU+XzlApAy4MPV1dUjkUwet9hpqpx6z/OQyRbwoffciM/f8QGfYeyJ0iqb8cAvb/AfOXoMF1+47Lil0mfsxhAhJN7/7luQSMQmrtIxfIhMSqRStaivbwCldEp4g6KCWDZXgGHo+JfPfBSf+NN3olCw/anfCsAX0p//P3DwKGa3NGN2y3RYtjvp2of0VLxJtu1g5vRpeN+7boJln3goEEIgGouhsakZRig0Ij3s1AHvE0bSmRwuWLEI3/3a3+CGa9Ygk81DBjMPEwI/yHVUlaGntx9SeFi7auWku/5TOhqmKP4k7JWXrcLe/Qfx28eePeEl0UL4QgmNjU3IZjNIDwyUsYPppG4OKyqD2o6LQsHCzOZp+OBt1+PGay8BJaTU3p3QVW8YT8G2XRxt78SNb74UikKrxvmbMrOBPqnBwe3vugVHjnZi2849iEZObHdgMS7G4wmEwxFkM8HiyDKaeLBh6aS/Z//ll7gLpg3X5ZjZ3IC3vvM63PrWy9HUWIdMJu8DeQLgFw1rz742rLlwGRobalGoshbglDEA//Qy/MXHbsc/fuU76OjqRtg48dWxQnhQFAU1qRRi8TjyuRzy+Twcx4YMYvDgKRp9XmlQ+5eW7QD2RSVsxwXnHOFQCIvnt+Kayy7EdVetxrT6WhRMEwNpfzYAE6jwDQdfBnF/+679WDS/FUsXzUW+YJ0S139apoOL7jNVk8AdH/8gvvT1e5DJ5qEHEzYnUm/130h/a1cimUQ8kYBtWygUCrAtG67rDF0eTchxBBHHcWGaNmyHw/O4P0fAFNQkYliycA5WLJ6LtRctx8J5rQiHdBRMCwPprJ8LTLCxMxL4uqZi196DaGpIYc2FK1AwTy34p2U8vEiMaJ3VjL/+yw/jK3d9D/m8CcPQKt4rdLwh+G+xrhswjNBx6+M55yURSbVsBHxmcwPqa5NI1cTRWJ9C47RazJ7ZhAXntKCxIQVd1+C6HKZlYyCTG6ILeDLg7953CDWJKN50xaqKW+dVO5TZnCnT2TwS8cgpizvA4DrZPfsP4mt3fz/YJB46qWXSI+hwjDgT6HKOaDiEr3zx0zBCBrbvOgBCCHRdg8qUkuhVUZJNCF+gh45H4JxgzFdVht17DyKViOItV/tahMGqoFPyCCmRzuSRiEVAT2fxJFcwMXdOCz736T9D07QG5HL5ivR8xyerD6qQCDFUU7g0VgZADbiIlmUjncmjfyCLTDZf6r9ThZw0+MVRNkWh2L5rHxrqkrjumksC8OVpW49zWveyKNSXPJsxowl/f+efY+nieaX1atV3h2RMNnNRosWnjtPBvcSQ4w5tTAR8lTF43MPWHXsxf85MXHvlajjBpNPp3JBCp0IZ1TQtxONR/N2nPorr33w5cvnCuOqh1U1OMaJEy8mCX4r3uoa+gTR2723DmguWlQo9I4lWneqHAdIlhKhF+rE8LZw5v/BBKcWf/vE7cU7rLPzkFw8gk80hEglXhdY9PssXIKSK4AsBJVDy2Lv/MCAFbnjLWjTW1w6KRJ8enkqJag5IlxFCCpTQhBwqU3XaBJ9yeRNXXb4K58zxjWDD5m3QNM1fluyJSf32qgG+kBKUEKiaf+qPHO3EOa3NuOSiFVAUBQXTPr0b0QggJCSllBBC8hSE5KlC4Q+0kinQUqXI5k00NzXgbz/5EXzsQ7ehJhlHJpP3tYgmJT8oB/oEwJfSnwgmBJqmwuEcu/e1ob8/jWsuuxBXXXohhJRwXPeU3/NHvDIH0jcgpMAoQbuqqs1CePK0W0BZclgcnLj2yjU4f+VS/OZ3T+PJZ15COpNFyNBLEznVCA1D1DgrBN+v5ROoigrTsnDoyDE4toMlC2dj2eJ5gRStNeENY6eoOytVphJK0M4oobs0VbnANF1JJrWVcgLyc/BHoqPhEN7/7ptw1WWr8NiTL+CFlzegt28AKmPQda0kDXfixiCHWMJo4EtZ/DM/hjKqAIQgl8ujs7sdruPinNbpWL5kHmKxMCzLCZLZqbMHkRDAE0KGQgYokTsZgG2MKeDcA6bkUIWvQurmORrq6/An73sbrn/z5XjplU144ZVNaDt0JNjto0JT1UG1jUoMQg6ubh++zlWWVr77TSHG/K0htu2gp3fAX46tUJwzewYWzW9FIhaFZTsoFOwpderLf1aXe4gxBRB8BxOCr/O4JzwhqJhiTJvhXTnXdeE4DpKJOG6+/ipce/Va7NnXhvUbt2HLtl041tEN23GgUApVZVAU5biEi4ywU7A441e2ttevCSh0iECzZdnIZvNIZ3MQnkBdbQIXnbsYLbOaEDI0OLZbcvdT6dQPrwIKIajj2MLQlOdYKBTamMub7Zqmz3A5l5rKyFSl45crgrmur7K9dNE8LF8yH9lcAQcPt2Pn7v3YuXs/jrZ3Ip3JwbLMkiZ/cX2cJ/0Vt8VH0xg8TykVbTj3YDsOLNuGadkomP5WM01lSMZjWLlkHmZOn4ZYLBKIVLulEz9VgS+6f8fhUtd1AikOq6qxnhFCcqblPBXXQu/LZNKerqpMYmoPZJSf4IJpA/CnixctOAdLF80F9wTSmRx6evrQ09uPrp4+dHb1oKe3H7bjwDQtMIWVNAD3HjgC23KC4Va/XKwqCnRDQzQSxqzpDZhWn0JNIgbd0AM36sK07JJHmcrAlyuzOi734omYIj33aUKISQDAdd23Esp+c6yjR6RScYozdCJHiMEErajjoyi0dLXxPH+O3+8K+qJOnhDY33a0xOePhAxEo2GEDB1aIOWKIARw7msAkClQwTtRF9DXlxFNjXVUCv5WVVUfIQCIlDKUy1u7TZs3MwXS0DV6ps/lyXI1sRFif3nCp2tqiUEkpK/4VfQE5V26M3mrOSEElu0I7oGEdNYejRjzCYFJpZQKIaSgMPK92lSUmKYt3gjL24tgU+qreA1vMJUbuGU7sCwblu0E7V8xhCl0KjeTT2YJuGDaojYVJaqm3EMIKUgJhUgpKQCZzWbrFKbtzuatuK4qRNc18kab0/9DfYLTLx3Xk/FoKM1de0EsFuvxFf4IEQBoPB7vZgq5e1pdgmbzlnf2bXtjPbm85U2rS1BIeXc8Hu/22XFEBM0hSQIvETJtZ4tpuq3c4zIeDVEhznqBM/mhhCCTLwimqCQUUg+k+7XljY0wAUhCiKSBiwj2GJG8hPyrVDJCbNsVjsPP+Nj3h+76HZfDtrlIJSNEQn6yqYnkA6zlEEIIIcSTUioRw3jQtO1/n9lcx/rTOS4mQZfm7HNqkj4pJfrTOT6zuY6Zpv2diGE8GCT93og8qSAUUADMsp11IMoF3T39vC4VZ2cTwjPv9Pf0ZXh9XYpB8vWGrq0FwAGI4uk/jhIW/IEkhNjC47coFG2JeJT19Wc43gBXoT8U4EGA3v4MT8SjTKHygPD4LYQQuxj3x+QEEkKElFKJRCJHs5Z5Q9hQu+PxGOvtTXviNBMYzz4TYFVJid7ejJeIx1jYULszZuGGSCRyNHD9YsJU2WKs6OvLLovFQg9yD63dvX1uIhZRK9kJcPY5dW1zx3GRzuTd+rqUqjIcSKfNm2prY1uHx/2JcaWHGEHfrEgs9r8aYxccbu/2dE0jsWiInqgA89mn+sSZbM4UtuPKmc11Cufeq5lM+u21tbWHxwJ/XFp48WaQSqUOdR47dpnj8G83N9YpqqrS3v4Mt2xHTknSwx8I8DSo8PX2Z7iqqbS5sVZxOP/WsWPtl08E/AmzQKWUxYohcjnrBsNQv0QUuqyrewCe5/GwoSuGoRWXiJ71CpPa3/DfY8tyZMGyPUVRWEN9EsITW2zufiZqGA8Px+ykDaD8ikgI8Q4dOhRqbGy8AyB/SRmr7+3LwnUcT1UZDF0ljCm0NDwph67FPmsaEwBk8JdSJ1IICc49YdmudF0OVdOU2lQMnst7CCF3dXS03zVr1ixTSqkMv+pVxQCG5wW+N8g1hUKRj3KPf0hR2AzXA3LZXEDLIh5jFJRS4r8IaNGEzz5jUpSFlFIICSGEFEJIzgWEkIqmaYjGolAVwOP8CGPsB6aJ70aj5NhwbE5+YG6C3gAAenpkPJHgVwP0VtfjFzu2O0c3wsQTHlyXg7scnvDgBQsXzj7j6w8pVAFTmc9tpBSObQlVYwdUhb0IiF+l0+yJujqSKQJfyak/aQMYZggKIYSX/V4YwErP8y6Rkszl3F0gQZqFEAkpZYIQop+1gdE5e1JKmxCSppSmCdCuMLpbZWw3gBcAbCKEFMreawbAOxHgi8//BwgC7lrXCyG2AAAAAElFTkSuQmCC) center/cover no-repeat;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.15)}
+.brand h1{font-size:17px;margin:0;font-weight:700;letter-spacing:.2px}
+.brand small{display:block;font-size:11.5px;color:#a9b6cc;font-weight:400}
+.progress-main{flex:1;max-width:520px}
+.pm-top{display:flex;justify-content:space-between;font-size:12.5px;color:#c9d3e3;margin-bottom:6px}
+.pm-top b{color:#fff;font-size:15px}
+.bar{height:8px;border-radius:99px;background:rgba(255,255,255,.14);overflow:hidden}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#8fb3ff,#ffffff);border-radius:99px;transition:width .5s ease}
+.hactions{margin-left:auto;display:flex;gap:8px}
+.hbtn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;border-radius:9px;padding:7px 12px;font-size:13px;display:flex;align-items:center;gap:6px}
+.hbtn:hover{background:rgba(255,255,255,.16)}
+
+/* ---------- layout ---------- */
+main{max-width:1400px;margin:0 auto;padding:22px 24px 80px}
+.section-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 12px}
+.section-title h2{font-size:16px;margin:0;color:var(--navy);font-weight:700}
+.section-title span{color:var(--grey-3);font-size:12.5px}
+
+/* schede tipo */
+.tabs{-webkit-user-select:none;user-select:none;display:flex;gap:4px;border-bottom:1px solid var(--line);margin:-4px 0 20px}
+.tabs button{border:0;background:transparent;padding:10px 16px;font-weight:600;color:var(--grey-4);border-bottom:3px solid transparent;margin-bottom:-1px;font-size:14px}
+.tabs button em{font-style:normal;font-weight:500;font-size:12px;color:var(--grey-3);margin-left:4px}
+.tabs button.on{color:var(--navy);border-bottom-color:var(--navy)}
+.tabs button:hover{color:var(--navy)}
+.card .kind{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;background:var(--navy-2);color:#fff;letter-spacing:.3px}
+/* carta girata (esclusa dal conteggio) */
+.card.escl{background:repeating-linear-gradient(135deg,#1b3a6b 0 10px,#1f4176 10px 20px);border-color:#16325d;color:#fff}
+.card.escl .coin,.card.escl .zm,.card.escl .badge,.card.escl .kind{visibility:hidden}
+.card.escl .back{position:absolute;inset:30px 8px auto;display:grid;place-items:center;height:112px}
+.card.escl .back span{width:64px;height:64px;border-radius:50%;border:2px dashed rgba(255,255,255,.45);display:grid;place-items:center;font-weight:800;color:rgba(255,255,255,.75);font-size:15px}
+.card.escl .meta,.card.escl .tema{color:#c9d3e3}
+.card.escl .tema::before{content:"Esclusa · ";font-weight:700;color:#fff}
+.card.escl .info{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.35)}
+.card .pers{position:absolute;top:8px;left:8px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:99px;background:var(--gold);color:#1d1600}
+.add-btn{border:1px dashed var(--navy-3);background:#fff;color:var(--navy);border-radius:10px;padding:8px 12px;font-weight:600;display:flex;align-items:center;gap:6px}
+.add-btn:hover{background:#e7edf8}
+.m-sec{width:100%;padding:9px;border-radius:11px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-weight:600;font-size:13px}
+.m-sec:hover{background:rgba(255,255,255,.1)}
+.m-row{display:flex;gap:8px;width:100%}
+.m-row .m-sec{flex:1}
+.m-sec.danger{border-color:rgba(255,140,140,.5);color:#ffd2d2}
+/* modulo nuova moneta */
+.form{padding:24px 26px;grid-column:1/-1;position:relative;min-width:0}
+.modal>*{min-width:0}
+.f-grid>div,.f-two>div{min-width:0}
+.fld input,.fld textarea,.fld select{width:100%;min-width:0}
+.form h2{margin:0 0 4px;color:var(--navy);font-size:20px}
+.form p.sub{margin:0 0 18px;color:var(--grey-4);font-size:13px}
+.f-grid{display:grid;grid-template-columns:170px 1fr;gap:20px}
+.f-photo{display:flex;flex-direction:column;align-items:center;gap:10px}
+.f-prev{width:150px;height:150px;border-radius:50%;background:var(--grey-1);display:grid;place-items:center;overflow:hidden;border:2px dashed var(--grey-2);color:var(--grey-3);font-size:13px;text-align:center;cursor:pointer}
+.f-prev img{width:100%;height:100%;object-fit:cover}
+.f-photo label.pick{border:1px solid var(--line);border-radius:9px;padding:7px 12px;cursor:pointer;font-weight:600;color:var(--navy);font-size:13px}
+.fld{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.fld label{font-size:12px;font-weight:600;color:var(--grey-4);text-transform:uppercase;letter-spacing:.4px}
+.fld input,.fld textarea,.fld select{border:1px solid var(--line);border-radius:9px;padding:9px 11px;font:inherit;background:#fff}
+.fld textarea{min-height:70px;resize:vertical}
+.f-two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.seg2{display:flex;background:var(--grey-1);border-radius:10px;padding:3px}
+.seg2 label{flex:1;text-align:center;padding:7px 6px;border-radius:8px;cursor:pointer;font-size:13px;font-weight:600;color:var(--grey-4);text-transform:none;letter-spacing:0}
+.seg2 input{display:none}
+.seg2 label:has(input:checked){background:#fff;color:var(--navy);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.f-act{display:flex;justify-content:flex-end;gap:10px;margin-top:8px;align-items:center}
+.f-act .chk{margin-right:auto}
+.f-act button{border:0;border-radius:10px;padding:10px 18px;font-weight:700}
+.f-act .save{background:var(--navy);color:#fff}
+.f-act .cancel{background:var(--grey-1);color:var(--grey-4)}
+.toolbar select{-webkit-appearance:none;appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a93a3' stroke-width='2.6' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 10px center;padding-right:30px;cursor:pointer}
+.toolbar select:hover{border-color:var(--grey-2)}
+/* tendina paesi con bandiere */
+.cdd{position:relative}
+.cdd-btn{display:flex;align-items:center;gap:8px;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--text);min-width:170px;text-align:left}
+.cdd-btn:hover{border-color:var(--grey-2)}
+.cdd.open .cdd-btn{border-color:var(--navy-3);box-shadow:0 0 0 3px rgba(44,82,145,.15)}
+.cdd-btn svg{margin-left:auto;color:var(--grey-3);flex:none;transition:transform .2s}
+.cdd.open .cdd-btn svg{transform:rotate(180deg)}
+.cdd-cur{display:flex;align-items:center;gap:8px;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cdd-globe{font-size:15px;line-height:1;width:20px;text-align:center}
+.cdd-panel{display:none;position:absolute;top:calc(100% + 6px);left:0;width:300px;max-height:420px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 16px 40px rgba(15,37,71,.18);padding:6px;z-index:50}
+.cdd.open .cdd-panel{display:block;animation:pop-in .16s ease-out}
+.cdd-back{display:none}
+.cdd-head{display:none}
+.cdd-item{display:flex;align-items:center;gap:10px;width:100%;border:0;background:transparent;padding:8px 10px;border-radius:9px;color:var(--text);text-align:left;font-size:13.5px}
+.cdd-item:hover{background:var(--bg)}
+.cdd-item.sel{background:#e7edf8;color:var(--navy);font-weight:600}
+.cdd-item .flag{width:24px;height:16px}
+.cdd-item em{margin-left:auto;font-style:normal;font-size:12px;color:var(--grey-3);display:flex;align-items:center;gap:6px}
+.cdd-item em i{display:block;width:34px;height:4px;border-radius:99px;background:var(--grey-1);overflow:hidden}
+.cdd-item em i b{display:block;height:100%;background:var(--navy-3)}
+.cdd-item.done em{color:#9a7a10;font-weight:700}
+.cdd-item.done em i b{background:var(--gold)}
+.cdd-cur .sm{display:none}
+@media (max-width:640px){.cdd-cur .lg{display:none}.cdd-cur .sm{display:inline}}
+.cdd-sep{height:1px;background:var(--line);margin:4px 6px}
+@keyframes pop-in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+/* ritocchi */
+.card.owned .coin .lock{opacity:1;background:var(--gold);box-shadow:0 0 0 3px #fff}
+.card.owned .coin .lock svg{display:none}
+.card.owned .coin .lock::after{content:"★";color:#fff;font-size:12px;line-height:1}
+.card.owned{background:linear-gradient(180deg,#ffffff 0%,#fbfcfe 100%)}
+.bar.full>i{background:linear-gradient(90deg,#e8c95a,#fff3c4)}
+.totop{position:fixed;right:20px;bottom:24px;width:44px;height:44px;border-radius:50%;border:0;background:var(--navy);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px rgba(15,37,71,.3);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s;z-index:25}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.empty .e-ico{font-size:34px;display:block;margin-bottom:8px}
+.empty button{margin-top:12px;border:0;background:var(--navy);color:#fff;border-radius:9px;padding:8px 14px;font-weight:600}
+.group-h h3 .yr{font-variant-numeric:tabular-nums}
+/* in arrivo */
+.upcoming{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-bottom:22px;box-shadow:var(--shadow)}
+.up-row{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 12px;scrollbar-width:thin}
+.up-card{flex:0 0 250px;display:flex;gap:12px;align-items:center;border:1px dashed var(--grey-2);border-radius:12px;padding:10px 12px;background:#fafbfc;cursor:pointer;box-shadow:3px 4px 10px rgba(15,37,71,.10)}
+.up-card:hover{border-color:var(--navy-3)}
+.up-coin{width:54px;height:54px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--grey-1);overflow:hidden}
+.up-coin img{width:100%;height:100%;object-fit:contain;filter:grayscale(1) brightness(.7)}
+.up-info{min-width:0}
+.up-info b{display:block;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.up-info .t{font-size:12px;color:var(--grey-4);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:#e7edf8;color:var(--navy-2);margin-top:4px}
+
+/* paesi */
+details.countries{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);margin-bottom:22px;box-shadow:var(--shadow)}
+details.countries summary{list-style:none;padding:14px 18px;cursor:pointer;display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy)}
+details.countries summary::-webkit-details-marker{display:none}
+details.countries summary .chev{margin-left:auto;transition:transform .2s;color:var(--grey-3)}
+details[open].countries summary .chev{transform:rotate(180deg)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;padding:0 18px 18px}
+.cbox{border:1px solid var(--line);border-radius:10px;padding:9px 11px;cursor:pointer;background:#fff;text-align:left;color:var(--text)}
+.cbox:hover{border-color:var(--navy-3)}
+.cbox.sel{border-color:var(--navy);box-shadow:0 0 0 2px rgba(27,58,107,.15)}
+.cbox .top{display:flex;align-items:center;gap:7px;font-weight:600;font-size:13px}
+.cbox .top em{margin-left:auto;font-style:normal;font-size:12px;color:var(--grey-4);font-weight:500}
+.cbox .bar{background:var(--grey-1);height:5px;margin-top:7px}
+.cbox .bar>i{background:var(--navy-3)}
+.cbox.done .bar>i{background:var(--gold)}
+.cbox.done .top em{color:#9a7a10;font-weight:700}
+.flag{width:20px;height:14px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.08);flex:none}
+
+/* toolbar */
+.toolbar{position:sticky;top:66px;z-index:20;background:rgba(245,246,248,.92);backdrop-filter:blur(8px);padding:10px 0 12px;margin-bottom:6px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+.seg{display:flex;background:var(--grey-1);border-radius:10px;padding:3px}
+.seg button{border:0;background:transparent;padding:6px 13px;border-radius:8px;color:var(--grey-4);font-size:13px;font-weight:600}
+.seg button.on{background:#fff;color:var(--navy);box-shadow:0 1px 3px rgba(0,0,0,.1)}
+.search{flex:1;min-width:200px;max-width:340px;position:relative}
+.search input{width:100%;padding:8px 12px 8px 34px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff}
+.search input:focus,select:focus{outline:2px solid rgba(44,82,145,.3);border-color:var(--navy-3)}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--grey-3)}
+select{padding:8px 10px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--text)}
+.chk{display:flex;align-items:center;gap:6px;color:var(--grey-4);font-size:13px;user-select:none}
+.count-info{margin-left:auto;color:var(--grey-3);font-size:12.5px}
+
+/* griglia */
+.group{margin-top:22px}
+.group-h{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.group-h h3{margin:0;font-size:20px;color:var(--navy);font-weight:700;display:flex;align-items:center;gap:8px}
+.group-h .gcount{font-size:12.5px;color:var(--grey-3)}
+.group-h .gbar{flex:1;max-width:200px;height:5px;background:var(--grey-1);border-radius:99px;overflow:hidden}
+.group-h .gbar i{display:block;height:100%;background:var(--navy-3)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:12px}
+.card{touch-action:manipulation;position:relative;background:var(--grey-1);border:1px solid var(--line);border-radius:var(--radius);padding:34px 12px 12px;text-align:center;cursor:pointer;transition:transform .15s ease,box-shadow .2s ease,background .3s ease;user-select:none;box-shadow:4px 5px 12px rgba(15,37,71,.13),1px 1px 2px rgba(15,37,71,.06)}
+@media (hover:hover){.card:hover{transform:translateY(-2px);box-shadow:6px 8px 18px rgba(15,37,71,.18),1px 1px 2px rgba(15,37,71,.06)}}
+.card .coin{width:112px;height:112px;margin:0 auto 10px;border-radius:50%;position:relative;display:grid;place-items:center}
+.card .coin img{width:100%;height:100%;object-fit:contain;clip-path:circle(48.5% at 50% 50%);filter:grayscale(1) brightness(.42) contrast(1.15);opacity:.9;transition:filter .45s ease,opacity .45s ease,transform .45s ease}
+.card .coin .cimg{width:100%;height:100%}
+.card .noimg{width:100%;height:100%;border-radius:50%;background:repeating-linear-gradient(45deg,#d6dae2 0 6px,#cfd4dd 6px 12px);display:grid;place-items:center;color:var(--grey-4);font-weight:800;font-size:22px}
+.card .lock{position:absolute;right:4px;bottom:4px;width:26px;height:26px;border-radius:50%;background:var(--grey-4);color:#fff;display:grid;place-items:center;box-shadow:0 0 0 3px var(--grey-1);transition:opacity .3s}
+.card .meta{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:var(--grey-4);font-weight:600}
+.card .tema{font-size:12.5px;margin-top:4px;line-height:1.4;max-height:2.8em;color:var(--grey-4);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.card .info{position:absolute;top:7px;right:7px;width:26px;height:26px;border-radius:50%;border:1px solid var(--grey-2);background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:700;font-size:13px;font-family:Georgia,serif;opacity:.85}
+.card .info:hover{opacity:1;border-color:var(--navy)}
+.card .zm{position:absolute;top:38px;right:7px;width:26px;height:26px;border-radius:50%;border:1px solid var(--grey-2);background:#fff;color:var(--navy);display:grid;place-items:center;opacity:0;transition:opacity .15s}
+@media (hover:hover){.card:hover .zm{opacity:.9}}
+@media (hover:none){.card .zm{display:none}}
+.card .zm:hover{opacity:1;border-color:var(--navy)}
+.card .badge{position:absolute;top:8px;left:8px;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:99px;background:#fff;color:var(--navy-2);border:1px solid var(--line)}
+.card .badge.new{background:var(--navy);color:#fff;border-color:var(--navy)}
+/* sbloccata */
+.card.owned{background:#fff;border-color:#cfd9ea}
+.card.owned .coin img{filter:none;opacity:1}
+.card.owned .lock{opacity:0}
+.card.owned .tema{color:var(--text)}
+.card.owned .meta{color:var(--navy)}
+.card.owned .coin::after{content:"";position:absolute;inset:-6px;border-radius:50%;box-shadow:0 0 0 2px rgba(201,162,39,.0);transition:box-shadow .4s}
+.card.unlocking .coin img{animation:pop .7s ease}
+.card.unlocking .coin::before{content:"";position:absolute;inset:-14px;border-radius:50%;background:radial-gradient(circle,rgba(255,224,130,.75) 0%,rgba(255,224,130,0) 65%);animation:glow .9s ease-out forwards;z-index:-1}
+.card.unlocking .spark{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--gold);top:50%;left:50%;animation:spark .8s ease-out forwards;pointer-events:none}
+@keyframes pop{0%{transform:scale(.85)}45%{transform:scale(1.12) rotate(-6deg)}100%{transform:scale(1)}}
+@keyframes glow{0%{opacity:0;transform:scale(.6)}35%{opacity:1}100%{opacity:0;transform:scale(1.35)}}
+@keyframes spark{0%{opacity:1;transform:translate(-50%,-50%) translate(0,0) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) translate(var(--dx),var(--dy)) scale(.3)}}
+.empty{padding:60px 20px;text-align:center;color:var(--grey-3)}
+
+/* ---------- modale ---------- */
+.overlay{position:fixed;inset:0;background:rgba(10,22,44,.55);display:none;align-items:center;justify-content:center;z-index:60;padding:20px}
+.overlay.open{display:flex}
+.modal{background:#fff;border-radius:18px;max-width:860px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:300px 1fr;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.m-left{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:28px 24px;display:flex;flex-direction:column;align-items:center;gap:16px;border-radius:18px 0 0 18px}
+.m-coin{width:230px;height:230px;border-radius:50%;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.m-coin img{width:94%;height:94%;object-fit:contain;transition:filter .4s}
+.m-coin.locked img{filter:grayscale(1) brightness(.5)}
+.m-own{width:100%;padding:11px;border-radius:11px;border:0;font-weight:700;font-size:14px;background:#fff;color:var(--navy)}
+.m-own.on{background:var(--gold);color:#1d1600}
+.m-right{padding:26px 28px;position:relative}
+.m-close{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:18px;color:var(--grey-4)}
+.m-close:hover{color:var(--navy);border-color:var(--navy)}
+.m-country{display:flex;align-items:center;gap:8px;color:var(--grey-4);font-weight:600;font-size:13px}
+.m-right h2{margin:6px 40px 4px 0;font-size:21px;color:var(--navy);line-height:1.25}
+.m-serie{color:var(--grey-4);font-size:13px;margin-bottom:14px}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0 18px}
+.fact{background:var(--bg);border-radius:10px;padding:9px 12px}
+.fact small{display:block;color:var(--grey-3);font-size:11px;text-transform:uppercase;letter-spacing:.5px;font-weight:600}
+.fact b{font-size:14px;font-weight:600}
+.m-desc{color:#333c4d;font-size:13.5px;line-height:1.6}
+.m-desc h4,.m-var h4{margin:0 0 6px;color:var(--navy);font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+.m-var{border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:18px}
+.dd{position:relative;display:inline-block}
+.dd-btn{border:1px solid var(--line);background:#fff;border-radius:9px;padding:7px 12px;display:flex;gap:8px;align-items:center;color:var(--text)}
+.dd-menu{position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);padding:6px;display:none;min-width:220px;z-index:5}
+.dd.open .dd-menu{display:block}
+.dd-menu label{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:7px;cursor:pointer;font-size:13px}
+.dd-menu label:hover{background:var(--bg)}
+.var-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:9px;overflow:hidden}
+.stepper button{border:0;background:var(--bg);width:30px;height:32px;font-size:16px;color:var(--navy)}
+.stepper span{min-width:34px;text-align:center;font-weight:700}
+.note{width:100%;margin-top:12px;border:1px solid var(--line);border-radius:9px;padding:8px 10px;font:inherit;resize:vertical;min-height:38px}
+.src{font-size:12px;color:var(--grey-3);margin-top:16px}
+
+/* zoom immagine */
+.m-coin{position:relative;cursor:zoom-in}
+.m-zoom{position:absolute;right:30px;bottom:6px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:var(--navy);box-shadow:0 4px 12px rgba(0,0,0,.3);display:grid;place-items:center}
+.m-coinwrap{position:relative}
+.viewer{position:fixed;inset:0;background:rgba(6,14,30,.94);z-index:70;display:none;overflow:hidden;touch-action:none}
+.viewer.open{display:block}
+.viewer img{position:absolute;left:50%;top:50%;max-width:min(80vw,80vh);max-height:80vh;transform-origin:center center;cursor:grab;user-select:none;-webkit-user-drag:none;border-radius:50%}
+.viewer img.drag{cursor:grabbing}
+.v-bar{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);display:flex;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);padding:6px;border-radius:14px;backdrop-filter:blur(6px)}
+.v-bar button{border:0;background:transparent;color:#fff;min-width:38px;height:36px;border-radius:9px;font-size:18px}
+.v-bar button:hover{background:rgba(255,255,255,.15)}
+.v-bar span{color:#c9d3e3;font-size:13px;align-self:center;min-width:52px;text-align:center}
+.v-title{position:absolute;top:18px;left:24px;right:80px;color:#fff;font-weight:600}
+.v-title small{display:block;color:#a9b6cc;font-weight:400}
+.v-close{position:absolute;top:14px;right:18px;width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;font-size:22px}
+.v-hint{position:absolute;top:64px;left:24px;color:#8090a8;font-size:12px}
+
+/* toast e caricamento */
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(30px);background:var(--navy);color:#fff;padding:11px 16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transition:all .3s;z-index:80;display:flex;align-items:center;gap:12px;font-size:13.5px;pointer-events:none}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.toast button{background:rgba(255,255,255,.15);border:0;color:#fff;border-radius:7px;padding:4px 10px}
+.toast.gold{background:linear-gradient(90deg,#9a7a10,#c9a227);color:#1d1600}
+.loader{position:fixed;inset:0;background:var(--bg);z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--navy)}
+.loader .bar{width:320px;background:var(--grey-1)}
+.loader .bar i{background:var(--navy-3)}
+.loader p{margin:0;color:var(--grey-4)}
+.loader .err{color:#a33;max-width:440px;text-align:center}
+.loader button{border:0;background:var(--navy);color:#fff;padding:9px 16px;border-radius:9px}
+.hidden{display:none!important}
+
+.menu-btn{display:none}
+.offline-bar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#e7edf8;border:1px solid #cfd9ea;color:var(--navy);border-radius:12px;padding:10px 14px;margin-bottom:18px;font-size:13.5px}
+.offline-bar b{font-weight:700}
+.offline-bar .ob-act{margin-left:auto;display:flex;gap:8px}
+.offline-bar button{border:0;border-radius:8px;padding:7px 12px;font-weight:600}
+.offline-bar .yes{background:var(--navy);color:#fff}
+.offline-bar .no{background:transparent;color:var(--grey-4)}
+
+@media (max-width:760px) and (min-width:641px){
+  .hwrap{flex-wrap:wrap;padding:12px 16px}
+  .progress-main{order:3;max-width:none;flex-basis:100%}
+  main{padding:16px}
+  .toolbar{top:112px}
+  .modal{grid-template-columns:1fr}
+  .m-left{border-radius:18px 18px 0 0}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+}
+
+/* ===== telefono ===== */
+@media (max-width:640px){
+  body{font-size:14px}
+  .hwrap{flex-wrap:wrap;gap:10px;padding:10px 14px 12px}
+  .brand{gap:10px}
+  .brand h1{font-size:17px}
+  .brand small{display:none}
+  .logo{width:34px;height:34px;border-radius:9px}
+  .progress-main{order:3;flex-basis:100%;max-width:none}
+  .pm-top{font-size:12px;margin-bottom:5px}
+  .menu-btn{display:grid;place-items:center;margin-left:auto;width:40px;height:36px;padding:0;font-size:20px;letter-spacing:1px}
+  .hactions{display:none;position:absolute;right:10px;top:calc(env(safe-area-inset-top) + 52px);flex-direction:column;gap:2px;background:#fff;border-radius:14px;padding:6px;box-shadow:0 12px 40px rgba(0,0,0,.28);min-width:230px;z-index:40}
+  .hactions.open{display:flex}
+  .hactions .hbtn{color:var(--navy);background:transparent;border:0;justify-content:flex-start;padding:12px 12px;font-size:15px;border-radius:10px}
+  .hactions .hbtn:active{background:var(--bg)}
+  main{padding:12px 12px calc(84px + env(safe-area-inset-bottom))}
+  .tabs{overflow-x:auto;scrollbar-width:none;margin:0 -12px 12px;padding:0 8px}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:none;padding:10px 10px;font-size:14px}
+  .upcoming{padding:12px 12px 6px;margin-bottom:14px}
+  .up-card{flex-basis:225px;padding:9px 10px}
+  details.countries{margin-bottom:14px}
+  details.countries summary{padding:12px 14px;font-size:14px}
+  .cgrid{grid-template-columns:1fr 1fr;padding:0 10px 12px;gap:6px}
+  .cbox{padding:8px 9px}
+  .cbox .top{font-size:12px}
+  .toolbar{position:static;backdrop-filter:none;background:transparent;gap:8px;padding:2px 0 10px}
+  .search{order:-1;flex-basis:100%;max-width:none;min-width:0}
+  .search input{font-size:16px;padding:10px 12px 10px 36px}
+  .seg{flex:1 1 100%}
+  .seg button{flex:1;padding:8px 4px;font-size:13.5px}
+  .toolbar select{flex:1 1 30%;min-width:0;font-size:14px;padding:9px 6px}
+  .chk{font-size:13px}
+  .count-info{font-size:12px}
+  .group{margin-top:18px}
+  .group-h{margin-bottom:8px;gap:8px}
+  .group-h h3{font-size:17px}
+  .group-h .gcount{font-size:12px}
+  .group-h .gbar{max-width:80px}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .card{padding:26px 5px 8px;border-radius:12px;box-shadow:2px 3px 8px rgba(15,37,71,.12),1px 1px 2px rgba(15,37,71,.05)}
+  .card .coin{width:78px;height:78px;margin-bottom:6px}
+  .card .noimg{font-size:16px}
+  .card .lock{width:20px;height:20px;right:-1px;bottom:-1px;box-shadow:0 0 0 2px var(--grey-1)}
+  .card .lock svg{width:9px;height:9px}
+  .card .meta{font-size:10.5px;gap:4px;white-space:nowrap}
+  .card .meta .flag{width:14px;height:10px}
+  .card .tema{font-size:11px;line-height:1.3;max-height:2.6em;min-height:2.6em}
+  .card .info{width:24px;height:24px;top:4px;right:4px;font-size:12px}
+  .card .badge,.card .kind{font-size:9px;top:6px;left:5px;padding:1px 5px}
+  .card .zm{display:none}
+  .empty{padding:40px 10px}
+  .overlay{padding:0;align-items:flex-end}
+  .modal{grid-template-columns:1fr;max-height:94vh;max-height:94dvh;border-radius:20px 20px 0 0;animation:sheet .25s ease}
+  .m-left{border-radius:20px 20px 0 0;padding:22px 16px 18px;gap:14px}
+  .m-coin{width:180px;height:180px}
+  .m-zoom{right:-4px;bottom:0}
+  .m-own{padding:13px;font-size:15px}
+  .m-right{padding:18px 16px calc(28px + env(safe-area-inset-bottom))}
+  .modal{position:relative}
+  .m-right{position:static}
+  .m-right h2{font-size:18px;margin-right:0}
+  .m-close{top:12px;right:12px;width:38px;height:38px;font-size:20px;background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.35)}
+  .facts{gap:6px;margin:12px 0 14px}
+  .fact{padding:8px 10px}
+  .fact b{font-size:13px}
+  .note{font-size:16px}
+  .dd-menu label{padding:10px 8px;font-size:15px}
+  .toast{left:12px;right:12px;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateY(30px);font-size:13px;padding:10px 12px}
+  .toast.show{transform:translateY(0)}
+  .toast span{flex:1}
+  .v-hint{display:none}
+  .v-title{top:calc(16px + env(safe-area-inset-top))}
+  .v-close{top:calc(12px + env(safe-area-inset-top))}
+  .v-bar{bottom:calc(18px + env(safe-area-inset-bottom))}
+  .viewer img{max-width:92vw;max-height:70vh}
+  .offline-bar{font-size:13px;padding:10px 12px}
+  .offline-bar .ob-act{margin-left:0;width:100%;justify-content:flex-end}
+}
+@media (max-width:640px){.form{padding:20px 16px calc(24px + env(safe-area-inset-bottom))}.f-grid{grid-template-columns:1fr;gap:12px}.f-prev{width:130px;height:130px}.fld input,.fld textarea,.fld select{font-size:16px}.card.escl .back{inset:24px 4px auto;height:78px}.card.escl .back span{width:48px;height:48px;font-size:12px}.card .pers{font-size:9px;top:6px;left:5px;padding:1px 5px}.add-btn{flex:1 1 100%;justify-content:center}}
+@media (max-width:640px){
+  .cdd{flex:1 1 30%;min-width:0}
+  .cdd-btn{min-width:0;padding:9px 8px;gap:6px;font-size:14px}
+  .cdd-cur .flag{width:18px;height:12px}
+  .cdd-back{position:fixed;inset:0;background:rgba(10,22,44,.45);z-index:55}
+  .cdd.open .cdd-back{display:block}
+  .cdd-panel{position:fixed;left:0;right:0;top:auto;bottom:0;width:auto;max-height:72vh;max-height:72dvh;border-radius:20px 20px 0 0;padding:6px 10px calc(14px + env(safe-area-inset-bottom));z-index:56}
+  .cdd.open .cdd-panel{animation:sheet .22s ease-out}
+  .cdd-head{display:flex;align-items:center;justify-content:space-between;padding:12px 8px 8px;font-weight:700;color:var(--navy);font-size:16px;position:sticky;top:-6px;background:#fff;z-index:1}
+  .cdd-head::before{content:"";position:absolute;top:2px;left:50%;width:38px;height:4px;border-radius:9px;background:var(--grey-2);transform:translateX(-50%)}
+  .cdd-item{padding:12px 10px;font-size:15px}
+  .totop{right:14px;bottom:calc(18px + env(safe-area-inset-bottom));width:42px;height:42px}
+}
+@keyframes sheet{from{transform:translateY(40px);opacity:.6}to{transform:none;opacity:1}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hwrap">
+    <div class="brand">
+      <div class="logo"></div>
+      <div><h1>Album 2€</h1><small>La tua collezione di 2€ commemorativi</small></div>
+    </div>
+    <div class="progress-main">
+      <div class="pm-top"><span id="pmLabel">Monete sbloccate</span><span><b id="pmOwned">0</b> / <span id="pmTot">0</span> · <span id="pmPct">0%</span></span></div>
+      <div class="bar"><i id="pmBar" style="width:0"></i></div>
+    </div>
+    <button class="hbtn menu-btn" id="btnMenu" title="Menu">⋯</button>
+    <div class="hactions" id="hactions">
+      <button class="hbtn" id="btnOffline" title="Scarica tutte le immagini per usare l'album senza internet"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg> Immagini offline</button>
+      <button class="hbtn" id="btnExport" title="Salva un file di backup della collezione"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M4 17v3h16v-3"/></svg> Backup</button>
+      <button class="hbtn" id="btnImport" title="Carica un file di backup"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4m0 0-4 4m4-4 4 4M4 17v3h16v-3"/></svg> Ripristina</button>
+      <button class="hbtn" id="btnRefresh" title="Riscarica l'elenco delle monete da Wikipedia"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"/></svg> Aggiorna dati</button>
+      <input type="file" id="fileImport" accept="application/json" class="hidden">
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav class="tabs" id="tabs">
+    <button data-t="comm">2€ commemorativi <em id="tabC"></em></button>
+    <button data-t="naz">Facce nazionali <em id="tabN"></em></button>
+    <button data-t="tutte">Tutte</button>
+  </nav>
+  <div class="offline-bar hidden" id="offlineBar">
+    <span>📶 <b>Vuoi usare l'album anche senza internet?</b> Scarico una volta le immagini delle monete (circa 20 MB, meglio col Wi-Fi).</span>
+    <span class="ob-act"><button class="no" id="obNo">Più tardi</button><button class="yes" id="obYes">Scarica</button></span>
+  </div>
+  <section class="upcoming" id="upSection">
+    <div class="section-title"><h2>In arrivo</h2><span id="upSub">Monete annunciate ma non ancora emesse</span></div>
+    <div class="up-row" id="upRow"></div>
+  </section>
+
+  <details class="countries" id="countriesBox">
+    <summary>Progressi per paese <span style="font-weight:400;color:var(--grey-3);font-size:12.5px" id="cSub"></span><span class="chev">▾</span></summary>
+    <div class="cgrid" id="cGrid"></div>
+  </details>
+
+  <div class="toolbar">
+    <div class="seg" id="segOwn">
+      <button data-v="all" class="on">Tutte</button>
+      <button data-v="owned">Ottenute</button>
+      <button data-v="missing">Mancanti</button>
+    </div>
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Cerca tema, paese, anno…">
+    </div>
+    <div class="cdd" id="cdd"><button class="cdd-btn" id="cddBtn" type="button"><span class="cdd-cur" id="cddCur">Tutti i paesi</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="cdd-back" id="cddBack"></div><div class="cdd-panel" id="cddPanel"></div></div>
+    <select id="fYear"><option value="">Tutti gli anni</option></select>
+    <select id="fSort">
+      <option value="year-desc">Più recenti</option>
+      <option value="year-asc">Più vecchie</option>
+      <option value="country">Per paese</option>
+    </select>
+    <label class="chk" title="Vaticano, San Marino, Monaco e Andorra: tirature basse, si trovano di rado nel resto">
+      <input type="checkbox" id="fMicro" checked> Micro-stati
+    </label>
+    <label class="chk" title="Mostra anche le carte girate (escluse dal conteggio)">
+      <input type="checkbox" id="fEscl" checked> Escluse
+    </label>
+    <button class="add-btn" id="btnAdd"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg> Aggiungi moneta</button>
+    <span class="count-info" id="countInfo"></span>
+  </div>
+
+  <div id="groups"></div>
+</main>
+
+<div class="overlay" id="overlay">
+  <div class="modal" id="modal"></div>
+</div>
+<div class="viewer" id="viewer">
+  <div class="v-title" id="vTitle"></div>
+  <div class="v-hint">Rotellina o +/− per lo zoom · trascina per spostarti · doppio clic per ingrandire</div>
+  <button class="v-close" data-vclose title="Chiudi (Esc)">×</button>
+  <img id="vImg" alt="" draggable="false">
+  <div class="v-bar"><button data-vz="-1" title="Riduci">−</button><span id="vPct">100%</span><button data-vz="1" title="Ingrandisci">+</button><button data-vz="0" title="Adatta" style="font-size:14px">Adatta</button></div>
+</div>
+<button class="totop" id="toTop" title="Torna su" aria-label="Torna su"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="toast" id="toast"></div>
+<div class="loader" id="loader">
+  <div class="logo" style="width:72px;height:72px;border-radius:16px"></div>
+  <b id="ldTitle">Preparo l'album…</b>
+  <div class="bar"><i id="ldBar" style="width:0"></i></div>
+  <p id="ldText">Scarico l'elenco delle monete da Wikipedia</p>
+</div>
+
+<script>
+/* =========================================================
+   DATI: scaricati da it.wikipedia.org ("2 euro commemorativi emessi nel AAAA")
+   e salvati in locale. La collezione resta salvata solo su questo PC.
+   ========================================================= */
+const API = 'https://it.wikipedia.org/w/api.php';
+const FIRST_YEAR = 2004;
+const LS_DATA = 'album2e.data.v2', LS_COLL = 'album2e.collezione.v1', LS_UI = 'album2e.ui.v1';
+const MICRO = ['Vaticano', 'San Marino', 'Monaco', 'Andorra'];
+const ZECCHE_DE = [['A', 'Berlino'], ['D', 'Monaco di Baviera'], ['F', 'Stoccarda'], ['G', 'Karlsruhe'], ['J', 'Amburgo']];
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch (e) { return false; } }
+};
+
+function parseYearPage(html, year) {
+  const MESI = {gennaio:0,febbraio:1,marzo:2,aprile:3,maggio:4,giugno:5,luglio:6,agosto:7,settembre:8,ottobre:9,novembre:10,dicembre:11};
+  const clean = s => (s || '').replace(/\[\s*(\d+|nota \d+|N \d+|[a-z])\s*\]/gi, '').replace(/ /g, ' ').replace(/[ \t\r\n]+/g, ' ').trim();
+  const pad = n => String(n).padStart(2, '0');
+  const parseDate = s => {
+    const m = clean(s).toLowerCase().replace(/º|°/g, '').match(/(\d{1,2})\s+([a-z]+)\s+(\d{4})/);
+    return m && MESI[m[2]] !== undefined ? m[3] + '-' + pad(MESI[m[2]] + 1) + '-' + pad(+m[1]) : null;
+  };
+  const imgSrc = cell => {
+    const img = cell && cell.querySelector('img');
+    if (!img) return null;
+    let s = img.getAttribute('src') || '';
+    if (s.startsWith('//')) s = 'https:' + s;
+    return s.split('?')[0];
+  };
+  const PAESI = { 'città del vaticano': 'Vaticano' };
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  doc.querySelectorAll('sup.reference, .mw-ref, style').forEach(e => e.remove());
+  doc.querySelectorAll('br').forEach(b => b.replaceWith('‖'));
+  const coins = [];
+  [...doc.querySelectorAll('table.wikitable')].forEach(tb => {
+    const trs = [...tb.querySelectorAll(':scope > tbody > tr, :scope > tr')];
+    if (!trs.length) return;
+    const head = [...trs[0].children].map(x => clean(x.textContent).toLowerCase());
+    if (!head.includes('paese') || !head.includes('tema')) return;
+    const N = head.length, col = n => head.indexOf(n);
+    const pending = new Array(N).fill(null);
+    let joint = null, last = null;
+    trs.slice(1).forEach(tr => {
+      const own = [...tr.children];
+      const row = new Array(N).fill(null), inh = new Array(N).fill(false);
+      for (let i = 0; i < N; i++) if (pending[i] && pending[i].left > 0) { row[i] = pending[i].cell; inh[i] = true; pending[i].left--; }
+      let p = 0;
+      own.forEach(cell => {
+        while (p < N && row[p]) p++;
+        const span = Math.max(1, cell.colSpan || 1);
+        for (let k = 0; k < span && p + k < N; k++) { row[p + k] = cell; if (cell.rowSpan > 1) pending[p + k] = { cell, left: cell.rowSpan - 1 }; }
+        p += span;
+      });
+      if (own.length === 1 && ((own[0].colSpan || 1) > 1 || /^\s*descrizione/i.test(own[0].textContent))) {
+        if (last) last.descrizione = clean(own[0].textContent.replace(/‖/g, ' ')).replace(/^descrizione:\s*/i, '');
+        return;
+      }
+      const raw = n => { const i = col(n); return i >= 0 && row[i] ? row[i].textContent : ''; };
+      const txt = n => clean(raw(n).replace(/‖/g, ' '));
+      let paese = txt('paese'); paese = PAESI[paese.toLowerCase()] || paese;
+      if (!paese) return;
+      const parts = raw('tema').split('‖').map(clean).filter(Boolean);
+      const tema = parts[0] || '', serie = parts.slice(1).join(' · ');
+      const em = txt('emissione');
+      const ci = col('paese');
+      const flag = row[ci] ? imgSrc(row[ci]) : null;
+      const img = row[0] && !inh[0] ? imgSrc(row[0]) : null;
+      if (/unione europea/i.test(paese)) { joint = { tema, img, descrizione: '' }; last = joint; return; }
+      const c = { anno: year, paese, flag, tema, serie, tiratura: txt('tiratura'), emissione: em, data: parseDate(em), disegnatore: txt('disegnatore'), img, descrizione: '', comune: false };
+      if (joint) { c.comune = true; c.iscrizione = parts.join(' '); c.tema = joint.tema; c.serie = 'Emissione comune di tutti i paesi dell\'euro'; if (!c.img) c.img = joint.img; c._j = joint; last = null; }
+      else last = c;
+      coins.push(c);
+    });
+  });
+  const seen = {};
+  coins.forEach(c => {
+    if (c._j) { c.descrizione = c._j.descrizione; delete c._j; }
+    c.segnaposto = !c.img || /expected|placeholder/i.test(c.img);
+    if (c.segnaposto) c.img = null;
+    c.descFutura = /^in futuro/i.test(c.descrizione);
+    if (c.descFutura) c.descrizione = '';
+    if (/^da definire/i.test(c.tema)) c.tema = 'Tema da definire';
+    let id = slug(year + '-' + c.paese + '-' + c.tema).slice(0, 70);
+    if (seen[id]) id += '-' + (++seen[id]); else seen[id] = 1;
+    c.id = id;
+  });
+  return coins;
+}
+function parseNationalPage(html) {
+  const clean = s => (s || '').replace(/\u00a0/g, ' ').replace(/[ \t\r\n]+/g, ' ').trim();
+  const imgSrc = cell => { const img = cell && cell.querySelector('img'); if (!img) return null; let s = img.getAttribute('src') || ''; if (s.startsWith('//')) s = 'https:' + s; return s.split('?')[0]; };
+  const PAESI = { 'città del vaticano': 'Vaticano', 'principato di monaco': 'Monaco' };
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+  doc.querySelectorAll('sup.reference, .mw-ref, style').forEach(e => e.remove());
+  const tb = [...doc.querySelectorAll('table.wikitable')].find(t => /immagine/i.test(t.querySelector('tr').textContent) && /autore/i.test(t.querySelector('tr').textContent));
+  if (!tb) return [];
+  const out = [], perPaese = {}; let last = null;
+  [...tb.querySelectorAll(':scope > tbody > tr')].slice(1).forEach(tr => {
+    const cells = [...tr.children];
+    if (cells.length === 1) { if (last) last.descrizione = clean(cells[0].textContent); return; }
+    const off = cells.length === 4 ? 1 : 0;
+    const pc = cells[off], raw = clean(pc.textContent).replace(/^[\u{1F1E6}-\u{1F1FF}]+/u, '');
+    const m = raw.match(/^(.*?)\s*(?:(\d+)ª serie)?$/);
+    let paese = clean(m[1]); paese = PAESI[paese.toLowerCase()] || paese;
+    if (!paese) return;
+    const n = Math.max(m[2] ? +m[2] : 1, (perPaese[paese] || 0) + 1);
+    perPaese[paese] = n;
+    const periodo = clean(cells[off + 2] && cells[off + 2].textContent).replace(/\s*-\s*$/, '–oggi').replace(/(\d)-(\d)/, '$1–$2');
+    const c = { tipo: 'naz', anno: +(periodo.match(/\d{4}/) || [0])[0], periodo, paese, flag: imgSrc(pc), serie: n > 1 || m[2] ? n + 'ª serie' : '',
+      tema: '', tiratura: '', emissione: '', data: null, disegnatore: clean(cells[off + 1] && cells[off + 1].textContent).replace(/^\?$/, ''),
+      img: off ? imgSrc(cells[0]) : null, descrizione: '', comune: false, id: 'naz-' + slug(paese) + '-' + n };
+    out.push(c); last = c;
+  });
+  out.forEach(c => {
+    const d = c.descrizione;
+    c.tema = !d ? 'Nuova faccia nazionale' : d.length <= 90 ? d : d.slice(0, 90).replace(/\s+\S*$/, '') + '…';
+    c.segnaposto = !c.img; c.descFutura = false;
+  });
+  return out;
+}
+function slug(s) { return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+
+async function downloadAll(onProgress) {
+  const thisYear = new Date().getFullYear();
+  const years = []; for (let y = FIRST_YEAR; y <= thisYear + 2; y++) years.push(y);
+  const out = []; let done = 0;
+  // 4 richieste alla volta per fare in fretta senza stressare Wikipedia
+  const queue = years.slice();
+  async function worker() {
+    while (queue.length) {
+      const y = queue.shift();
+      const url = API + '?action=parse&format=json&formatversion=2&origin=*&redirects=1&prop=text&page=' + encodeURIComponent('2 euro commemorativi emessi nel ' + y);
+      try {
+        const r = await fetch(url).then(r => r.json());
+        if (r.parse && r.parse.text) out.push(...parseYearPage(r.parse.text, y));
+      } catch (e) { if (y <= thisYear) throw e; }
+      onProgress(++done / years.length, y);
+    }
+  }
+  await Promise.all([worker(), worker(), worker(), worker()]);
+  if (!out.length) throw new Error('Nessuna moneta trovata');
+  out.forEach(c => c.tipo = 'comm');
+  try {   // facce nazionali dei 2€ (pagina "2 euro")
+    const r = await fetch(API + '?action=parse&format=json&formatversion=2&origin=*&prop=text&page=2_euro').then(r => r.json());
+    if (r.parse && r.parse.text) out.push(...parseNationalPage(r.parse.text));
+  } catch (e) { }
+  return out.sort((a, b) => a.anno - b.anno || (a.data || '9').localeCompare(b.data || '9'));
+}
+
+/* ---------- stato ---------- */
+let COINS = [], BYID = {}, WIKI = [];
+const LS_CUSTOM = 'album2e.personali.v1';
+let CUSTOM = store.get(LS_CUSTOM, []);      // monete aggiunte da te: non vengono mai toccate da "Aggiorna dati"
+const saveCustom = () => store.set(LS_CUSTOM, CUSTOM);
+let coll = store.get(LS_COLL, {});            // { id: { have, zecche:[], doppioni, note } }
+const ui = Object.assign({ showEscl: true, tipo: 'comm', own: 'all', q: '', country: '', year: '', sort: 'year-desc', micro: true }, store.get(LS_UI, {}));
+const today = () => new Date().toISOString().slice(0, 10);
+
+function isFuture(c) {
+  if (c.pers) return false;
+  const t = today();
+  if (c.tipo === 'naz') return c.anno > +t.slice(0, 4);
+  if (c.data) return c.data > t;
+  return c.anno > +t.slice(0, 4) || (c.anno === +t.slice(0, 4) && (c.segnaposto || c.descFutura));
+}
+const has = c => !!(coll[c.id] && coll[c.id].have);
+const saveColl = () => store.set(LS_COLL, coll);
+const saveUI = () => store.set(LS_UI, ui);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[m]));
+const bigImg = s => s && s.includes('/thumb/') ? s.replace(/\/\d+px-/, '/330px-') : s;
+const flagImg = s => s ? s.replace(/\/\d+px-/, '/40px-') : '';
+const fmtDate = c => {
+  if (!c.data) return c.emissione || '—';
+  return new Date(c.data + 'T12:00:00').toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
+};
+
+/* se Wikipedia cambia un testo, prova a non perdere le monete già segnate */
+function migrateCollection() {
+  let changed = false;
+  Object.keys(coll).forEach(id => {
+    if (BYID[id]) return;
+    const m = id.match(/^(\d{4})-(.+)$/); if (!m) return;
+    const cand = COINS.filter(c => !coll[c.id] && c.id.startsWith(m[1]) && (c.id.slice(0, 22) === id.slice(0, 22)));
+    if (cand.length === 1) { coll[cand[0].id] = coll[id]; delete coll[id]; changed = true; }
+  });
+  if (changed) saveColl();
+}
+
+/* ---------- rendering ---------- */
+const $ = s => document.querySelector(s);
+
+const tipoOk = c => ui.tipo === 'tutte' || (c.tipo || 'comm') === ui.tipo;
+const isEscl = c => !!(coll[c.id] && coll[c.id].escl);
+const emptyEntry = o => !o.have && !o.note && !(o.zecche || []).length && !o.doppioni && !o.escl;
+function shownBase() { return COINS.filter(c => tipoOk(c) && !isFuture(c) && (ui.micro || !MICRO.includes(c.paese))); }
+function visibleBase() { return shownBase().filter(c => !isEscl(c)); }   // quelle che contano nei totali
+
+function renderHeader() {
+  const base = visibleBase();
+  const n = base.filter(has).length, t = base.length;
+  $('#pmOwned').textContent = n; $('#pmTot').textContent = t;
+  const pct = t ? Math.round(n / t * 1000) / 10 : 0;
+  $('#pmPct').textContent = pct + '%'; $('#pmBar').style.width = pct + '%'; $('#pmBar').parentNode.classList.toggle('full', t > 0 && n === t);
+  $('#pmLabel').textContent = { comm: 'Commemorative sbloccate', naz: 'Facce nazionali sbloccate', tutte: 'Monete sbloccate' }[ui.tipo];
+  const nC = COINS.filter(c => c.tipo !== 'naz' && !isFuture(c) && (ui.micro || !MICRO.includes(c.paese))), nN = COINS.filter(c => c.tipo === 'naz' && (ui.micro || !MICRO.includes(c.paese)));
+  $('#tabC').textContent = nC.filter(has).length + '/' + nC.length; $('#tabN').textContent = nN.filter(has).length + '/' + nN.length;
+}
+
+function countryStats() {
+  const m = {};
+  visibleBase().forEach(c => { const o = m[c.paese] = m[c.paese] || { tot: 0, own: 0, flag: c.flag }; o.tot++; if (has(c)) o.own++; });
+  return m;
+}
+
+function renderCountries() {
+  const st = countryStats();
+  const names = Object.keys(st).sort((a, b) => a.localeCompare(b, 'it'));
+  const done = names.filter(k => st[k].own === st[k].tot).length;
+  $('#cSub').textContent = '· ' + done + ' completati su ' + names.length;
+  $('#cGrid').innerHTML = names.map(k => {
+    const o = st[k], pct = o.tot ? o.own / o.tot * 100 : 0;
+    return `<button class="cbox ${o.own === o.tot ? 'done' : ''} ${ui.country === k ? 'sel' : ''}" data-c="${esc(k)}">
+      <div class="top">${o.flag ? `<img class="flag" src="${esc(flagImg(o.flag))}" alt="">` : ''}${esc(k)}<em>${o.own}/${o.tot}${o.own === o.tot ? ' ★' : ''}</em></div>
+      <div class="bar"><i style="width:${pct}%"></i></div></button>`;
+  }).join('');
+  // tendina paesi con bandiere e avanzamento
+  const cur = ui.country && st[ui.country] ? ui.country : '';
+  if (ui.country && !cur) ui.country = '';
+  const fl = k => st[k] && st[k].flag ? `<img class="flag" src="${esc(flagImg(st[k].flag))}" alt="">` : '<span class="cdd-globe">🏳️</span>';
+  $('#cddCur').innerHTML = cur ? fl(cur) + esc(cur) : '<span class="cdd-globe">🌍</span><span class="lg">Tutti i paesi</span><span class="sm">Paesi</span>';
+  $('#cddPanel').innerHTML = `<div class="cdd-head">Scegli il paese<span style="font-weight:400;font-size:13px;color:var(--grey-3)">${names.length} paesi</span></div>
+    <button class="cdd-item ${!cur ? 'sel' : ''}" data-cc=""><span class="cdd-globe">🌍</span>Tutti i paesi</button><div class="cdd-sep"></div>` +
+    names.map(k => { const o = st[k], pct = o.tot ? o.own / o.tot * 100 : 0;
+      return `<button class="cdd-item ${k === cur ? 'sel' : ''} ${o.own === o.tot ? 'done' : ''}" data-cc="${esc(k)}">${fl(k)}${esc(k)}<em>${o.own}/${o.tot}${o.own === o.tot ? ' ★' : ''}<i><b style="width:${pct}%"></b></i></em></button>`; }).join('');
+}
+
+function renderYears() {
+  const ys = [...new Set(visibleBase().map(c => c.anno))].sort((a, b) => b - a);
+  $('#fYear').innerHTML = '<option value="">Tutti gli anni</option>' + ys.map(y => `<option ${String(y) === String(ui.year) ? 'selected' : ''}>${y}</option>`).join('');
+}
+
+function renderUpcoming() {
+  if (ui.tipo === 'naz') { $('#upSection').classList.add('hidden'); return; }
+  const t = today();
+  const up = COINS.filter(c => c.tipo !== 'naz' && isFuture(c)).sort((a, b) => (a.data || a.anno + '-12-31').localeCompare(b.data || b.anno + '-12-31'));
+  $('#upSection').classList.toggle('hidden', !up.length);
+  $('#upSub').textContent = up.length + (up.length === 1 ? ' moneta annunciata' : ' monete annunciate') + ' ma non ancora emesse';
+  $('#upRow').innerHTML = up.map(c => {
+    let when = 'Data da definire';
+    if (c.data) { const d = Math.round((new Date(c.data) - new Date(t)) / 864e5); when = d <= 1 ? 'Esce domani' : 'Tra ' + d + ' giorni'; }
+    else if (c.anno) when = 'Entro il ' + c.anno;
+    return `<div class="up-card" data-id="${c.id}">
+      <div class="up-coin">${c.img ? `<img src="${esc(c.img)}" alt="" loading="lazy">` : '<span style="font-weight:800;color:var(--grey-3)">?</span>'}</div>
+      <div class="up-info"><b>${c.flag ? `<img class="flag" src="${esc(flagImg(c.flag))}" alt="" style="vertical-align:-2px;margin-right:5px">` : ''}${esc(c.paese)} · ${c.anno}</b>
+      <div class="t">${esc(c.tema)}</div><span class="pill">${when}</span></div></div>`;
+  }).join('');
+}
+
+function filtered() {
+  const q = ui.q.trim().toLowerCase();
+  return shownBase().filter(c => {
+    if (isEscl(c) && (!ui.showEscl || ui.own !== 'all')) return false;
+    if (ui.own === 'owned' && !has(c)) return false;
+    if (ui.own === 'missing' && has(c)) return false;
+    if (ui.country && c.paese !== ui.country) return false;
+    if (ui.year && String(c.anno) !== String(ui.year)) return false;
+    if (q && !(c.tema + ' ' + c.serie + ' ' + c.paese + ' ' + c.anno + ' ' + (c.iscrizione || '')).toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+function cardHTML(c) {
+  const o = coll[c.id] || {};
+  const t = today();
+  const recent = c.data && (new Date(t) - new Date(c.data)) / 864e5 < 60;
+  let badge = '';
+  if (c.paese === 'Germania' && o.zecche && o.zecche.length) badge = `<span class="badge">${o.zecche.length}/5 zecche</span>`;
+  else if (o.doppioni) badge = `<span class="badge">+${o.doppioni} doppi</span>`;
+  else if (recent) badge = '<span class="badge new">Nuova</span>';
+  if (!badge && c.pers) badge = '<span class="pers">Personale</span>';
+  if (!badge && c.tipo === 'naz' && ui.tipo === 'tutte') badge = '<span class="kind">Nazionale</span>';
+  const escl = isEscl(c);
+  return `<div class="card ${has(c) && !escl ? 'owned' : ''} ${escl ? 'escl' : ''}" data-id="${c.id}" title="${escl ? 'Carta girata: clic per le informazioni' : 'Clic per segnare come ottenuta'}">
+    ${escl ? '<div class="back"><span>2€</span></div>' : ''}
+    ${badge}
+    <button class="info" data-info="${c.id}" title="Informazioni">i</button>
+    ${c.img ? `<button class="zm" data-zoomc="${c.id}" title="Ingrandisci"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>` : ''}
+    <div class="coin">${c.img ? `<div class="cimg"><img src="${esc(c.img)}" alt="${esc(c.tema)}" loading="lazy" draggable="false" onerror="this.parentNode.replaceWith(Object.assign(document.createElement('div'),{className:'noimg',textContent:'2€'}))"></div>` : '<div class="noimg">2€</div>'}
+      <span class="lock"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M17 9V7a5 5 0 0 0-10 0v2H5v13h14V9h-2zM9 7a3 3 0 0 1 6 0v2H9V7z"/></svg></span></div>
+    <div class="meta">${c.flag ? `<img class="flag" src="${esc(flagImg(c.flag))}" alt="">` : ''}${esc(c.paese)} · ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</div>
+    <div class="tema">${esc(c.tema)}</div>
+  </div>`;
+}
+
+function renderGrid() {
+  const list = filtered();
+  const base = visibleBase();
+  $('#countInfo').textContent = list.length + ' monete mostrate';
+  let groups;
+  const byCountry = ui.sort === 'country' || ui.tipo === 'naz';
+  if (byCountry) {
+    groups = {}; list.forEach(c => (groups[c.paese] = groups[c.paese] || []).push(c));
+    groups = Object.keys(groups).sort((a, b) => a.localeCompare(b, 'it')).map(k => [k, groups[k].sort((a, b) => a.anno - b.anno)]);
+  } else {
+    groups = {}; list.forEach(c => (groups[c.anno] = groups[c.anno] || []).push(c));
+    groups = Object.keys(groups).sort((a, b) => ui.sort === 'year-asc' ? a - b : b - a).map(k => [k, groups[k]]);
+  }
+  if (!list.length) {
+    const any = ui.q || ui.country || ui.year || ui.own !== 'all';
+    $('#groups').innerHTML = `<div class="empty"><span class="e-ico">${ui.own === 'missing' && !ui.q ? '🏆' : '🔍'}</span>${ui.own === 'missing' && !ui.q ? 'Nessuna moneta mancante qui: le hai tutte!' : 'Nessuna moneta corrisponde ai filtri scelti.'}${any ? '<br><button id="resetF">Azzera i filtri</button>' : ''}</div>`;
+    const r = $('#resetF'); if (r) r.onclick = () => { ui.q = ''; ui.country = ''; ui.year = ''; ui.own = 'all'; saveUI(); syncControls(); renderAll(); };
+    return;
+  }
+  $('#groups').innerHTML = groups.map(([k, cs]) => {
+    const all = byCountry ? base.filter(c => c.paese === k) : base.filter(c => String(c.anno) === String(k));
+    const own = all.filter(has).length;
+    const flag = byCountry && cs[0].flag ? `<img class="flag" src="${esc(flagImg(cs[0].flag))}" alt="" style="width:26px;height:18px">` : '';
+    return `<section class="group"><div class="group-h"><h3>${flag}${esc(k)}</h3>
+      <span class="gcount">${own}/${all.length} ottenute</span><div class="gbar"><i style="width:${all.length ? own / all.length * 100 : 0}%"></i></div></div>
+      <div class="grid">${cs.map(cardHTML).join('')}</div></section>`;
+  }).join('');
+}
+
+function renderAll() { renderHeader(); renderCountries(); renderYears(); renderUpcoming(); renderGrid(); }
+
+/* ---------- azioni ---------- */
+let toastTimer;
+function toast(html, opts = {}) {
+  const el = $('#toast'); el.className = 'toast show' + (opts.gold ? ' gold' : ''); const m = html.match(/^(.*?)(<button.*)?$/s); el.innerHTML = '<span>' + m[1] + '</span>' + (m[2] || '');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove('show'), opts.ms || 3200);
+}
+
+function setOwned(id, val, fromCard) {
+  const c = BYID[id]; if (!c) return;
+  const before = countryStats()[c.paese];
+  const o = coll[id] = coll[id] || {};
+  o.have = val;
+  if (emptyEntry(o)) delete coll[id];
+  saveColl();
+  const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+  if (card) {
+    if (ui.own !== 'all') { renderAll(); } else {
+      card.outerHTML = cardHTML(c);
+      const nc = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+      if (val && nc) unlockFx(nc);
+      renderHeader(); renderCountries(); updateGroupHeaders();
+    }
+  } else renderAll();
+  const after = countryStats()[c.paese];
+  if (val) {
+    if (after && after.own === after.tot && before && before.own < before.tot) toast(`★ Hai completato <b>${esc(c.paese)}</b>! ${after.tot}/${after.tot} monete`, { gold: true, ms: 4500 });
+    else toast(`Sbloccata: <b>${esc(c.paese)} ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</b> · ${esc(c.tema.slice(0, 60))} <button data-undo="${id}">Annulla</button>`);
+  } else toast(`Rimossa dalla collezione: ${esc(c.paese)} ${c.anno} <button data-redo="${id}">Annulla</button>`);
+}
+
+function updateGroupHeaders() {
+  const base = visibleBase();
+  document.querySelectorAll('.group').forEach(g => {
+    const k = g.querySelector('h3').textContent.trim();
+    const all = (ui.sort === 'country' || ui.tipo === 'naz') ? base.filter(c => c.paese === k) : base.filter(c => String(c.anno) === k);
+    const own = all.filter(has).length;
+    g.querySelector('.gcount').textContent = own + '/' + all.length + ' ottenute';
+    g.querySelector('.gbar i').style.width = (all.length ? own / all.length * 100 : 0) + '%';
+  });
+}
+
+function unlockFx(card) {
+  card.classList.add('unlocking');
+  const coin = card.querySelector('.coin');
+  for (let i = 0; i < 10; i++) {
+    const s = document.createElement('i'); s.className = 'spark';
+    const a = Math.PI * 2 * i / 10, r = 70 + Math.random() * 20;
+    s.style.setProperty('--dx', Math.cos(a) * r + 'px'); s.style.setProperty('--dy', Math.sin(a) * r + 'px');
+    coin.appendChild(s);
+  }
+  setTimeout(() => { card.classList.remove('unlocking'); card.querySelectorAll('.spark').forEach(s => s.remove()); }, 950);
+}
+
+/* ---------- modale informazioni ---------- */
+function openModal(id) {
+  const c = BYID[id]; if (!c) return;
+  const o = coll[id] || {};
+  const fut = isFuture(c);
+  const wiki = c.tipo === 'naz' ? 'https://it.wikipedia.org/wiki/2_euro' : 'https://it.wikipedia.org/wiki/' + encodeURIComponent(('2 euro commemorativi emessi nel ' + c.anno).replace(/ /g, '_'));
+  const zecche = c.paese === 'Germania';
+  const z = o.zecche || [];
+  $('#modal').innerHTML = `
+    <div class="m-left">
+      <div class="m-coinwrap"><div class="m-coin ${has(c) ? '' : 'locked'}" ${c.img ? 'data-zoom title="Clic per ingrandire"' : ''}>${c.img ? `<img src="${esc(bigImg(c.img))}" onerror="if(this.src!=='${esc(c.img)}')this.src='${esc(c.img)}'" alt="">` : '<span style="font-size:42px;font-weight:800;color:var(--grey-2)">2€</span>'}</div>${c.img ? '<button class="m-zoom" data-zoom title="Ingrandisci"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5M11 8v6M8 11h6"/></svg></button>' : ''}</div>
+      ${fut ? '<div class="m-own" style="text-align:center;background:rgba(255,255,255,.12);color:#fff">Non ancora emessa</div>'
+            : isEscl(c) ? '<div class="m-own" style="text-align:center;background:rgba(255,255,255,.12);color:#fff">Carta girata · non conta</div>'
+            : `<button class="m-own ${has(c) ? 'on' : ''}" data-toggle="${id}">${has(c) ? '★ Nella tua collezione' : '+ Segna come ottenuta'}</button>`}
+      ${fut ? '' : `<button class="m-sec" data-escl="${id}">${isEscl(c) ? '↺ Rigira la carta (torna nel conteggio)' : '↻ Gira la carta (escludi dal conteggio)'}</button>`}
+      ${c.pers ? `<div class="m-row"><button class="m-sec" data-edit="${id}">✎ Modifica</button><button class="m-sec danger" data-del="${id}">🗑 Elimina</button></div>` : ''}
+    </div>
+    <div class="m-right">
+      <button class="m-close" data-close>×</button>
+      <div class="m-country">${c.flag ? `<img class="flag" src="${esc(flagImg(c.flag))}" alt="">` : ''}${esc(c.paese)} · ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</div>
+      <h2>${esc(c.tema)}</h2>
+      ${c.serie ? `<div class="m-serie">${esc(c.serie)}</div>` : ''}
+      <div class="facts">
+        ${c.pers ? `<div class="fact"><small>Anno</small><b>${esc(c.anno || '—')}</b></div><div class="fact"><small>Sezione</small><b>${c.tipo === 'naz' ? 'Facce nazionali' : '2€ commemorativi'}</b></div>`
+          : c.tipo === 'naz' ? `<div class="fact"><small>Coniata</small><b>${esc(c.periodo)}</b></div><div class="fact"><small>Tipo</small><b>Faccia nazionale${c.serie ? ' · ' + esc(c.serie) : ''}</b></div>`
+          : `<div class="fact"><small>Data di emissione</small><b>${esc(fmtDate(c))}</b></div><div class="fact"><small>Tiratura</small><b>${esc(c.tiratura || '—')}</b></div>`}
+        <div class="fact"><small>Paese</small><b>${esc(c.paese)}</b></div>
+        ${c.pers ? (c.tiratura ? `<div class="fact"><small>Tiratura</small><b>${esc(c.tiratura)}</b></div>` : '') : `<div class="fact"><small>Disegnatore</small><b>${esc(c.disegnatore || '—')}</b></div>`}
+      </div>
+      ${fut ? '' : `<div class="m-var"><h4>I tuoi esemplari</h4>
+        <div class="var-row">
+          ${zecche ? `<div class="dd" id="ddZ"><button class="dd-btn" data-dd>Zecche: <b>${z.length ? z.join(', ') : 'nessuna'}</b> ▾</button>
+            <div class="dd-menu">${ZECCHE_DE.map(([k, n]) => `<label><input type="checkbox" data-z="${k}" ${z.includes(k) ? 'checked' : ''}> <b>${k}</b> – ${n}</label>`).join('')}</div></div>` : ''}
+          <div style="display:flex;align-items:center;gap:8px">Doppioni <div class="stepper"><button data-dop="-1">−</button><span id="dopN">${o.doppioni || 0}</span><button data-dop="1">+</button></div></div>
+        </div>
+        ${zecche ? '<div style="font-size:12px;color:var(--grey-3);margin-top:8px">Le monete tedesche escono in 5 versioni, una per zecca (la lettera è sulla faccia nazionale).</div>' : ''}
+        <textarea class="note" id="noteT" placeholder="Note personali (es. dove l'hai trovata, stato di conservazione…)">${esc(o.note || '')}</textarea>
+      </div>`}
+      ${c.iscrizione ? `<div class="m-desc" style="margin-bottom:12px"><h4>Iscrizione nazionale</h4>${esc(c.iscrizione)}</div>` : ''}
+      ${c.pers && !c.descrizione ? '' : `<div class="m-desc"><h4>Descrizione</h4>${c.descrizione ? esc(c.descrizione.charAt(0).toUpperCase() + c.descrizione.slice(1)) : '<span style="color:var(--grey-3)">Descrizione non ancora disponibile.</span>'}</div>`}
+      ${c.pers ? '<div class="src">Moneta aggiunta da te</div>' : `<div class="src">Fonte: <a href="${wiki}" target="_blank" rel="noopener">Wikipedia – ${c.tipo === 'naz' ? '2 euro' : '2 euro commemorativi emessi nel ' + c.anno}</a></div>`}
+    </div>`;
+  $('#overlay').classList.add('open');
+  $('#modal').dataset.id = id;
+}
+function closeModal() { $('#overlay').classList.remove('open'); }
+
+function updateEntry(id, fn, noRender) {
+  const o = coll[id] = coll[id] || {};
+  fn(o);
+  if (emptyEntry(o)) delete coll[id];
+  saveColl();
+  if (noRender) return;
+  const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+  if (card) card.outerHTML = cardHTML(BYID[id]);
+}
+
+/* ---------- girare la carta ---------- */
+function flipCard(id) {
+  const c = BYID[id]; if (!c) return;
+  const now = !isEscl(c);
+  updateEntry(id, o => { o.escl = now; if (!now) delete o.escl; }, true);
+  const card = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`);
+  const swap = () => { const cur = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`); if (cur) { cur.outerHTML = cardHTML(c); const n = document.querySelector(`.card[data-id="${CSS.escape(id)}"]`); if (n && n.animate) n.animate([{ transform: 'perspective(600px) rotateY(-90deg)' }, { transform: 'perspective(600px) rotateY(0)' }], { duration: 220, easing: 'ease-out' }); } };
+  if (card && card.animate && !(now && !ui.showEscl)) { card.animate([{ transform: 'perspective(600px) rotateY(0)' }, { transform: 'perspective(600px) rotateY(90deg)' }], { duration: 200, easing: 'ease-in' }).onfinish = swap; }
+  else renderGrid();
+  renderHeader(); renderCountries(); updateGroupHeaders();
+  toast(now ? `Carta girata: <b>${esc(c.paese)} ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</b> non conta più nei totali <button data-escl="${id}">Annulla</button>` : `<b>${esc(c.paese)} ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</b> torna nel conteggio`);
+}
+
+/* ---------- monete personali ---------- */
+function rebuild() {
+  COINS = WIKI.concat(CUSTOM.map(c => Object.assign({ pers: true, comune: false, segnaposto: !c.img, descFutura: false, data: null, emissione: '', disegnatore: '', serie: '', periodo: c.anno ? 'dal ' + c.anno : '' }, c)));
+  const flags = {}; WIKI.forEach(c => { if (c.flag && !flags[c.paese]) flags[c.paese] = c.flag; });
+  COINS.forEach(c => { if (c.pers) c.flag = flags[c.paese] || null; });
+  BYID = {}; COINS.forEach(c => BYID[c.id] = c);
+}
+function resizePhoto(file) {
+  return new Promise((res, rej) => {
+    const img = new Image(), url = URL.createObjectURL(file);
+    img.onload = () => {
+      const S = 420, side = Math.min(img.width, img.height);   // ritaglio quadrato centrato
+      const cv = document.createElement('canvas'); cv.width = cv.height = S;
+      const g = cv.getContext('2d'); g.fillStyle = '#fff'; g.fillRect(0, 0, S, S);
+      g.drawImage(img, (img.width - side) / 2, (img.height - side) / 2, side, side, 0, 0, S, S);
+      URL.revokeObjectURL(url); res(cv.toDataURL('image/jpeg', 0.82));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); rej(); };
+    img.src = url;
+  });
+}
+let formPhoto = null;
+function openForm(id) {
+  const c = id ? CUSTOM.find(x => x.id === id) : null;
+  formPhoto = c ? c.img : null;
+  const paesi = [...new Set(WIKI.map(x => x.paese))].sort((a, b) => a.localeCompare(b, 'it'));
+  const tipo = c ? c.tipo : (ui.tipo === 'naz' ? 'naz' : 'comm');
+  $('#modal').innerHTML = `<form class="form" id="fForm" autocomplete="off">
+    <button type="button" class="m-close" data-close style="background:#fff;color:var(--grey-4);border-color:var(--line)">×</button>
+    <h2>${c ? 'Modifica moneta' : 'Aggiungi una moneta'}</h2>
+    <p class="sub">Resta salvata anche quando aggiorni i dati da Wikipedia e conta nei totali come le altre.</p>
+    <div class="f-grid">
+      <div class="f-photo">
+        <label class="f-prev" for="fImg" id="fPrev">${formPhoto ? `<img src="${formPhoto}" alt="">` : 'Tocca per<br>aggiungere<br>una foto'}</label>
+        <label class="pick" for="fImg">${formPhoto ? 'Cambia foto' : 'Scegli foto'}</label>
+        <input type="file" id="fImg" accept="image/*" class="hidden">
+        <span style="font-size:11.5px;color:var(--grey-3);text-align:center">Viene ritagliata a cerchio: tieni la moneta al centro</span>
+      </div>
+      <div>
+        <div class="fld"><label>Sezione</label>
+          <div class="seg2"><label><input type="radio" name="tipo" value="comm" ${tipo !== 'naz' ? 'checked' : ''}>2€ commemorativi</label><label><input type="radio" name="tipo" value="naz" ${tipo === 'naz' ? 'checked' : ''}>Facce nazionali</label></div></div>
+        <div class="f-two">
+          <div class="fld"><label for="fPaese">Paese *</label><input id="fPaese" list="paesiList" required value="${esc(c ? c.paese : '')}" placeholder="es. Italia"><datalist id="paesiList">${paesi.map(p => `<option value="${esc(p)}">`).join('')}</datalist></div>
+          <div class="fld"><label for="fAnno">Anno *</label><input id="fAnno" type="number" inputmode="numeric" min="1999" max="2100" required value="${esc(c ? c.anno : new Date().getFullYear())}"></div>
+        </div>
+        <div class="fld"><label for="fTema">Nome / tema *</label><input id="fTema" required value="${esc(c ? c.tema : '')}" placeholder="es. Errore di conio, versione speciale…"></div>
+        <div class="fld"><label for="fDesc">Descrizione (facoltativa)</label><textarea id="fDesc" placeholder="Cosa raffigura, dove l'hai trovata…">${esc(c ? c.descrizione : '')}</textarea></div>
+        <div class="fld"><label for="fTir">Tiratura (facoltativa)</label><input id="fTir" value="${esc(c ? c.tiratura : '')}" placeholder="es. 1 000 000"></div>
+      </div>
+    </div>
+    <div class="f-act">
+      ${c ? '' : '<label class="chk"><input type="checkbox" id="fHave" checked> Ce l\'ho già</label>'}
+      <button type="button" class="cancel" data-close>Annulla</button>
+      <button type="submit" class="save">${c ? 'Salva modifiche' : 'Aggiungi'}</button>
+    </div>
+  </form>`;
+  $('#modal').dataset.id = id || '';
+  $('#overlay').classList.add('open');
+  $('#fImg').addEventListener('change', async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try { formPhoto = await resizePhoto(f); $('#fPrev').innerHTML = `<img src="${formPhoto}" alt="">`; } catch (err) { toast('Non riesco a leggere questa foto'); }
+  });
+  $('#fForm').addEventListener('submit', e => {
+    e.preventDefault();
+    const data = {
+      tipo: document.querySelector('input[name="tipo"]:checked').value,
+      paese: $('#fPaese').value.trim(), anno: +$('#fAnno').value || '',
+      tema: $('#fTema').value.trim(), descrizione: $('#fDesc').value.trim(), tiratura: $('#fTir').value.trim(), img: formPhoto
+    };
+    if (!data.paese || !data.tema) return;
+    const old = JSON.stringify(CUSTOM);
+    let nid = id;
+    if (c) Object.assign(c, data);
+    else { nid = 'pers-' + Date.now().toString(36); CUSTOM.push(Object.assign({ id: nid }, data)); }
+    if (!saveCustom()) { CUSTOM = JSON.parse(old); toast('Spazio pieno: prova con una foto più piccola o elimina qualche moneta personale', { ms: 5000 }); return; }
+    if (!c && $('#fHave').checked) { coll[nid] = Object.assign(coll[nid] || {}, { have: true }); saveColl(); }
+    rebuild();
+    if (!tipoOk(BYID[nid])) { ui.tipo = BYID[nid].tipo; saveUI(); syncControls(); }
+    renderAll(); openModal(nid);
+    toast(c ? 'Moneta aggiornata' : `Aggiunta: <b>${esc(data.paese)} ${data.anno}</b> · ${esc(data.tema.slice(0, 50))}`);
+  });
+}
+function deleteCustom(id) {
+  const c = CUSTOM.find(x => x.id === id); if (!c) return;
+  if (!confirm(`Eliminare la moneta "${c.tema}"? Non si può annullare.`)) return;
+  CUSTOM = CUSTOM.filter(x => x.id !== id); saveCustom();
+  delete coll[id]; saveColl();
+  rebuild(); closeModal(); renderAll(); toast('Moneta eliminata');
+}
+
+/* ---------- visualizzatore con zoom ---------- */
+const V = { s: 1, x: 0, y: 0 };
+const origImg = s => {           // dalla miniatura di Wikipedia risale al file originale (più dettagliato)
+  const m = s && s.match(/^(https:\/\/)(?:thumb|upload)\.wikimedia\.org\/wikipedia\/([a-z]+)\/thumb\/(.+?)\/[^/]+$/);
+  return m ? m[1] + 'upload.wikimedia.org/wikipedia/' + m[2] + '/' + m[3] : s;
+};
+function vApply() {
+  const im = $('#vImg');
+  im.style.transform = `translate(calc(-50% + ${V.x}px), calc(-50% + ${V.y}px)) scale(${V.s})`;
+  $('#vPct').textContent = Math.round(V.s * 100) + '%';
+}
+function vZoom(f, cx, cy) {
+  const ns = Math.min(8, Math.max(1, V.s * f));
+  if (cx !== undefined) { // zoom verso il punto indicato dal mouse
+    const ox = cx - innerWidth / 2 - V.x, oy = cy - innerHeight / 2 - V.y;
+    V.x -= ox * (ns / V.s - 1); V.y -= oy * (ns / V.s - 1);
+  }
+  V.s = ns; if (V.s === 1) { V.x = 0; V.y = 0; }
+  vApply();
+}
+function openViewer(id) {
+  const c = BYID[id]; if (!c || !c.img) return;
+  const im = $('#vImg'), full = origImg(c.img), mid = bigImg(c.img);
+  im.onerror = () => { if (im.src !== mid && im.src !== c.img) im.src = mid; else if (im.src !== c.img) im.src = c.img; };
+  im.src = full;
+  $('#vTitle').innerHTML = esc(c.tema) + `<small>${esc(c.paese)} · ${c.tipo === 'naz' ? esc(c.periodo) : c.anno}</small>`;
+  V.s = 1; V.x = 0; V.y = 0; vApply();
+  $('#viewer').classList.add('open');
+}
+const closeViewer = () => $('#viewer').classList.remove('open');
+(() => {
+  const vw = $('#viewer'), im = $('#vImg'); let drag = null;
+  vw.addEventListener('wheel', e => { e.preventDefault(); vZoom(e.deltaY < 0 ? 1.2 : 1 / 1.2, e.clientX, e.clientY); }, { passive: false });
+  im.addEventListener('dblclick', e => { if (V.s > 1.5) vZoom(1 / V.s); else vZoom(3 / V.s, e.clientX, e.clientY); });
+  // trascinamento con mouse/dito e zoom con due dita
+  const pts = new Map(); let lastTap = 0, moved = false;
+  vw.addEventListener('pointerdown', e => {
+    if (e.target.closest('button')) return;
+    pts.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = false;
+    try { vw.setPointerCapture(e.pointerId); } catch (err) { }
+    im.classList.add('drag');
+  });
+  vw.addEventListener('pointermove', e => {
+    if (!pts.has(e.pointerId)) return;
+    const prev = pts.get(e.pointerId), cur = { x: e.clientX, y: e.clientY };
+    if (Math.abs(cur.x - prev.x) + Math.abs(cur.y - prev.y) > 2) moved = true;
+    if (pts.size === 1) { V.x += cur.x - prev.x; V.y += cur.y - prev.y; pts.set(e.pointerId, cur); vApply(); return; }
+    const other = [...pts.entries()].find(([id]) => id !== e.pointerId)[1];
+    const d0 = Math.hypot(prev.x - other.x, prev.y - other.y), d1 = Math.hypot(cur.x - other.x, cur.y - other.y);
+    pts.set(e.pointerId, cur);
+    if (d0 > 0) vZoom(d1 / d0, (cur.x + other.x) / 2, (cur.y + other.y) / 2);
+  });
+  const up = e => {
+    if (!pts.has(e.pointerId)) return;
+    pts.delete(e.pointerId); if (!pts.size) im.classList.remove('drag');
+    if (e.type === 'pointerup' && e.pointerType === 'touch' && !moved && e.target === im) {
+      const now = Date.now();
+      if (now - lastTap < 320) { if (V.s > 1.5) vZoom(1 / V.s); else vZoom(3 / V.s, e.clientX, e.clientY); lastTap = 0; } else lastTap = now;
+    }
+  };
+  vw.addEventListener('pointerup', up); vw.addEventListener('pointercancel', up);
+  vw.addEventListener('click', e => {
+    if (e.target.closest('[data-vclose]') || (e.target === vw && !moved)) { closeViewer(); return; }
+    const b = e.target.closest('[data-vz]'); if (!b) return;
+    const d = +b.dataset.vz; if (d === 0) vZoom(1 / V.s); else vZoom(d > 0 ? 1.4 : 1 / 1.4);
+  });
+})();
+
+/* ---------- eventi ---------- */
+document.addEventListener('click', e => {
+  const t = e.target;
+  if (t.closest('#viewer')) return;
+  const zc = t.closest('[data-zoomc]');
+  if (zc) { openViewer(zc.dataset.zoomc); return; }
+  const zm = t.closest('[data-zoom]');
+  if (zm) { openViewer($('#modal').dataset.id); return; }
+  const info = t.closest('[data-info]');
+  if (info) { e.stopPropagation(); openModal(info.dataset.info); return; }
+  const up = t.closest('.up-card'); if (up) { openModal(up.dataset.id); return; }
+  const ex = t.closest('[data-escl]');
+  if (ex) { const id = ex.dataset.escl; flipCard(id); if ($('#overlay').classList.contains('open')) openModal(id); return; }
+  const ed = t.closest('[data-edit]'); if (ed) { openForm(ed.dataset.edit); return; }
+  const dl = t.closest('[data-del]'); if (dl) { deleteCustom(dl.dataset.del); return; }
+  const card = t.closest('.card');
+  if (card) { if (isEscl(BYID[card.dataset.id])) openModal(card.dataset.id); else setOwned(card.dataset.id, !has(BYID[card.dataset.id]), true); return; }
+  const cb = t.closest('.cbox');
+  if (cb) { ui.country = ui.country === cb.dataset.c ? '' : cb.dataset.c; saveUI(); renderCountries(); renderGrid(); return; }
+  if (t.closest('[data-undo]')) { setOwned(t.closest('[data-undo]').dataset.undo, false); return; }
+  if (t.closest('[data-redo]')) { setOwned(t.closest('[data-redo]').dataset.redo, true); return; }
+  if (t.closest('[data-close]') || t === $('#overlay')) { closeModal(); return; }
+  const tg = t.closest('[data-toggle]');
+  if (tg) { const id = tg.dataset.toggle; setOwned(id, !has(BYID[id])); openModal(id); return; }
+  const dd = t.closest('[data-dd]'); if (dd) { dd.parentElement.classList.toggle('open'); return; }
+  if (!t.closest('.dd')) document.querySelectorAll('.dd.open').forEach(d => d.classList.remove('open'));
+  const dop = t.closest('[data-dop]');
+  if (dop) { const id = $('#modal').dataset.id; updateEntry(id, o => { o.doppioni = Math.max(0, (o.doppioni || 0) + +dop.dataset.dop); $('#dopN').textContent = o.doppioni; }); return; }
+  const tb = t.closest('#tabs button');
+  if (tb) { ui.tipo = tb.dataset.t; ui.country = ''; ui.year = ''; saveUI(); syncControls(); renderAll(); return; }
+  const seg = t.closest('#segOwn button');
+  if (seg) { ui.own = seg.dataset.v; saveUI(); syncControls(); renderGrid(); return; }
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.dataset.z) {
+    const id = $('#modal').dataset.id;
+    updateEntry(id, o => {
+      const s = new Set(o.zecche || []); t.checked ? s.add(t.dataset.z) : s.delete(t.dataset.z);
+      o.zecche = ZECCHE_DE.map(z => z[0]).filter(k => s.has(k));
+      if (o.zecche.length && !o.have) o.have = true;   // avere almeno una zecca = moneta ottenuta
+    });
+    const z = (coll[id] || {}).zecche || [];
+    document.querySelector('#ddZ .dd-btn b').textContent = z.length ? z.join(', ') : 'nessuna';
+    renderHeader(); renderCountries(); updateGroupHeaders();
+    const btn = document.querySelector('[data-toggle]');
+    if (btn && has(BYID[id])) { btn.classList.add('on'); btn.textContent = '★ Nella tua collezione'; document.querySelector('.m-coin').classList.remove('locked'); }
+  }
+});
+document.addEventListener('input', e => {
+  if (e.target.id === 'noteT') { const id = $('#modal').dataset.id; const v = e.target.value; const o = coll[id] = coll[id] || {}; o.note = v; if (emptyEntry(o)) delete coll[id]; saveColl(); }
+});
+document.addEventListener('keydown', e => {
+  if ($('#viewer').classList.contains('open')) { if (e.key === 'Escape') closeViewer(); if (e.key === '+' || e.key === '=') vZoom(1.4); if (e.key === '-') vZoom(1 / 1.4); return; }
+  if (e.key === 'Escape') closeModal();
+});
+
+$('#q').addEventListener('input', e => { ui.q = e.target.value; renderGrid(); });
+$('#cddBtn').addEventListener('click', e => {
+  e.stopPropagation(); const d = $('#cdd'); d.classList.toggle('open');
+  if (d.classList.contains('open')) { const s = $('#cddPanel .cdd-item.sel'); if (s) s.scrollIntoView({ block: 'nearest' }); }
+});
+$('#cddPanel').addEventListener('click', e => {
+  const it = e.target.closest('.cdd-item'); if (!it) return;
+  ui.country = it.dataset.cc; saveUI(); $('#cdd').classList.remove('open'); renderCountries(); renderGrid();
+});
+$('#cddBack').addEventListener('click', () => $('#cdd').classList.remove('open'));
+document.addEventListener('click', e => { if (!e.target.closest('#cdd')) $('#cdd').classList.remove('open'); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') $('#cdd').classList.remove('open'); });
+// torna su
+const toTop = $('#toTop');
+addEventListener('scroll', () => toTop.classList.toggle('show', scrollY > 900), { passive: true });
+toTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+$('#fYear').addEventListener('change', e => { ui.year = e.target.value; saveUI(); renderGrid(); });
+$('#fSort').addEventListener('change', e => { ui.sort = e.target.value; saveUI(); renderGrid(); });
+$('#fEscl').addEventListener('change', e => { ui.showEscl = e.target.checked; saveUI(); renderGrid(); });
+$('#btnAdd').addEventListener('click', () => openForm(null));
+$('#fMicro').addEventListener('change', e => { ui.micro = e.target.checked; saveUI(); if (!ui.micro && MICRO.includes(ui.country)) ui.country = ''; renderAll(); });
+
+function syncControls() {
+  document.querySelectorAll('#segOwn button').forEach(b => b.classList.toggle('on', b.dataset.v === ui.own));
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.t === ui.tipo));
+  $('#fYear').classList.toggle('hidden', ui.tipo === 'naz'); $('#fSort').classList.toggle('hidden', ui.tipo === 'naz');
+  $('#q').value = ui.q; $('#fSort').value = ui.sort; $('#fMicro').checked = ui.micro; $('#fEscl').checked = ui.showEscl;
+}
+
+$('#btnExport').addEventListener('click', async () => {
+  const name = 'collezione-2euro-' + today() + '.json';
+  const blob = new Blob([JSON.stringify({ app: 'album-2euro', versione: 1, salvato: new Date().toISOString(), collezione: coll, personali: CUSTOM }, null, 1)], { type: 'application/json' });
+  try {   // sul telefono: menu "Condividi" (Salva su File, Drive, WhatsApp…)
+    const file = new File([blob], name, { type: 'application/json' });
+    if (matchMedia('(pointer:coarse)').matches && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: 'Backup Album 2€' }); return; }
+  } catch (err) { if (err && err.name === 'AbortError') return; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = name; a.click(); URL.revokeObjectURL(a.href);
+  toast('Backup salvato nella cartella Download');
+});
+$('#btnImport').addEventListener('click', () => $('#fileImport').click());
+$('#fileImport').addEventListener('change', async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const j = JSON.parse(await f.text());
+    if (!j.collezione) throw 0;
+    if (!confirm('Sostituire la collezione attuale con quella del backup?')) return;
+    coll = j.collezione; saveColl();
+    if (Array.isArray(j.personali)) { CUSTOM = j.personali; saveCustom(); }
+    rebuild(); migrateCollection(); renderAll(); toast('Collezione ripristinata');
+  } catch (err) { toast('File non valido'); }
+  e.target.value = '';
+});
+$('#btnRefresh').addEventListener('click', () => {
+  if (!navigator.onLine) { toast('Sei offline: collegati a internet per aggiornare la lista'); return; }
+  loadData(true);
+});
+$('#btnMenu').addEventListener('click', e => { e.stopPropagation(); $('#hactions').classList.toggle('open'); });
+document.addEventListener('click', e => { if (!e.target.closest('#hactions') || e.target.closest('.hbtn')) $('#hactions').classList.remove('open'); }, true);
+
+/* ---------- uso offline: immagini salvate sul dispositivo ---------- */
+const IMG_CACHE = 'album-img-v1';
+const swOK = () => 'serviceWorker' in navigator && location.protocol.startsWith('http');
+let caching = false;
+async function cacheImages(silent) {
+  if (!swOK() || !('caches' in window)) { if (!silent) toast('Funziona nella versione installata dal sito'); return; }
+  if (caching) return;
+  if (!navigator.onLine) { if (!silent) toast('Sei offline: collegati (meglio col Wi-Fi) per scaricare le immagini'); return; }
+  caching = true; ui.offlineImg = true; saveUI(); $('#offlineBar').classList.add('hidden');
+  try {
+    await navigator.serviceWorker.ready;
+    const cache = await caches.open(IMG_CACHE);
+    const urls = [...new Set(COINS.map(c => c.img).concat(COINS.map(c => c.flag && flagImg(c.flag))).filter(u => u && u.startsWith('http')))];
+    const todo = [];
+    for (const u of urls) if (!(await cache.match(u))) todo.push(u);
+    let done = 0, fail = 0;
+    const step = () => { if (!silent) toast(`Scarico le immagini per l'uso offline… ${done}/${todo.length}`, { ms: 60000 }); };
+    if (todo.length) step();
+    const queue = todo.slice();
+    const worker = async () => { while (queue.length) { const u = queue.shift(); try { const r = await fetch(u, { mode: 'no-cors' }); if (!r.ok && r.type !== 'opaque') fail++; } catch (e) { fail++; } done++; if (done % 10 === 0 || done === todo.length) step(); } };
+    await Promise.all([worker(), worker(), worker(), worker(), worker(), worker()]);
+    if (!silent) toast(fail ? `Immagini salvate: ${urls.length - fail}/${urls.length}. Riprova più tardi per le mancanti.` : `Fatto! Tutte le ${urls.length} immagini sono disponibili anche offline.`, { ms: 5000 });
+  } catch (e) { if (!silent) toast('Download delle immagini non riuscito, riprova'); }
+  caching = false;
+}
+$('#btnOffline').addEventListener('click', () => cacheImages(false));
+$('#obYes').addEventListener('click', () => cacheImages(false));
+$('#obNo').addEventListener('click', () => { ui.offlineAsk = Date.now(); saveUI(); $('#offlineBar').classList.add('hidden'); });
+function maybeAskOffline() {
+  if (!swOK() || ui.offlineImg) return;
+  if (ui.offlineAsk && Date.now() - ui.offlineAsk < 3 * 864e5) return;   // richiede al massimo ogni 3 giorni
+  $('#offlineBar').classList.remove('hidden');
+}
+if (swOK()) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => { }));
+}
+
+/* ---------- avvio ---------- */
+async function loadData(force) {
+  try { localStorage.removeItem('album2e.data.v1'); } catch (e) { }
+  const cached = store.get(LS_DATA, null);
+  if (cached && !force) { WIKI = cached.coins; return start(); }
+  $('#loader').classList.remove('hidden');
+  $('#ldTitle').textContent = 'Preparo l\'album…';
+  $('#ldText').textContent = 'Scarico l\'elenco delle monete da Wikipedia';
+  try {
+    const coins = await downloadAll((p, y) => { $('#ldBar').style.width = Math.round(p * 100) + '%'; $('#ldText').textContent = 'Anno ' + y + '…'; });
+    WIKI = coins;
+    store.set(LS_DATA, { salvato: new Date().toISOString(), coins });
+    start();
+    if (force) toast('Elenco aggiornato: ' + coins.length + ' monete');
+    if (ui.offlineImg) setTimeout(() => cacheImages(true), 1500);   // salva anche le immagini delle monete nuove
+  } catch (err) {
+    if (cached) { WIKI = cached.coins; start(); toast('Aggiornamento non riuscito: uso i dati salvati'); return; }
+    $('#ldTitle').textContent = 'Non riesco a scaricare i dati';
+    $('#ldText').innerHTML = '<span class="err">Serve internet solo al primo avvio e quando premi “Aggiorna dati”. Collegati e riprova.</span>';
+    if (!document.getElementById('retry')) { const b = document.createElement('button'); b.id = 'retry'; b.textContent = 'Riprova'; b.onclick = () => { b.remove(); loadData(true); }; $('#loader').appendChild(b); }
+  }
+}
+function start() {
+  rebuild();
+  migrateCollection();
+  syncControls(); renderAll();
+  $('#loader').classList.add('hidden');
+  maybeAskOffline();
+}
+loadData(false);
+</script>
+</body>
+</html>
