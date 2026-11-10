@@ -1,5 +1,5 @@
 /* Album 2€ – service worker: fa funzionare l'app senza internet */
-const SHELL = 'album-shell-v3';
+const SHELL = 'album-shell-v4';
 const IMG = 'album-img-v1';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 

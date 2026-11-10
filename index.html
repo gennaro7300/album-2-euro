@@ -689,22 +689,27 @@ const tipoOk = c => ui.tipo === 'tutte' || (c.tipo || 'comm') === ui.tipo;
 const isEscl = c => !!(coll[c.id] && coll[c.id].escl);
 const emptyEntry = o => !o.have && !o.note && !(o.zecche || []).length && !o.doppioni && !o.escl;
 function shownBase() { return COINS.filter(c => tipoOk(c) && !isFuture(c) && (ui.micro || !MICRO.includes(c.paese))); }
+// zecche tedesche: ogni zecca in più che possiedi conta come una moneta in più (sia nelle tue che nel totale)
+const extraZ = c => { const o = coll[c.id]; return c.paese === 'Germania' && o && o.have && o.zecche && o.zecche.length > 1 ? o.zecche.length - 1 : 0; };
+const cntOwn = list => list.reduce((n, c) => n + (has(c) ? 1 + extraZ(c) : 0), 0);
+const cntTot = list => list.reduce((n, c) => n + 1 + extraZ(c), 0);
 function visibleBase() { return shownBase().filter(c => !isEscl(c)); }   // quelle che contano nei totali
 
 function renderHeader() {
   const base = visibleBase();
-  const n = base.filter(has).length, t = base.length;
+  const n = cntOwn(base), t = cntTot(base);
   $('#pmOwned').textContent = n; $('#pmTot').textContent = t;
   const pct = t ? Math.round(n / t * 1000) / 10 : 0;
   $('#pmPct').textContent = pct + '%'; $('#pmBar').style.width = pct + '%'; $('#pmBar').parentNode.classList.toggle('full', t > 0 && n === t);
   $('#pmLabel').textContent = { comm: 'Commemorative sbloccate', naz: 'Facce nazionali sbloccate', tutte: 'Monete sbloccate' }[ui.tipo];
   const nC = COINS.filter(c => c.tipo !== 'naz' && !isFuture(c) && (ui.micro || !MICRO.includes(c.paese))), nN = COINS.filter(c => c.tipo === 'naz' && (ui.micro || !MICRO.includes(c.paese)));
-  $('#tabC').textContent = nC.filter(has).length + '/' + nC.length; $('#tabN').textContent = nN.filter(has).length + '/' + nN.length;
+  const nCv = nC.filter(c => !isEscl(c)), nNv = nN.filter(c => !isEscl(c));
+  $('#tabC').textContent = cntOwn(nCv) + '/' + cntTot(nCv); $('#tabN').textContent = cntOwn(nNv) + '/' + cntTot(nNv);
 }
 
 function countryStats() {
   const m = {};
-  visibleBase().forEach(c => { const o = m[c.paese] = m[c.paese] || { tot: 0, own: 0, flag: c.flag }; o.tot++; if (has(c)) o.own++; });
+  visibleBase().forEach(c => { const o = m[c.paese] = m[c.paese] || { tot: 0, own: 0, flag: c.flag }; o.tot += 1 + extraZ(c); if (has(c)) o.own += 1 + extraZ(c); });
   return m;
 }
 
@@ -809,10 +814,10 @@ function renderGrid() {
   }
   $('#groups').innerHTML = groups.map(([k, cs]) => {
     const all = byCountry ? base.filter(c => c.paese === k) : base.filter(c => String(c.anno) === String(k));
-    const own = all.filter(has).length;
+    const own = cntOwn(all), tot = cntTot(all);
     const flag = byCountry && cs[0].flag ? `<img class="flag" src="${esc(flagImg(cs[0].flag))}" alt="" style="width:26px;height:18px">` : '';
     return `<section class="group"><div class="group-h"><h3>${flag}${esc(k)}</h3>
-      <span class="gcount">${own}/${all.length} ottenute</span><div class="gbar"><i style="width:${all.length ? own / all.length * 100 : 0}%"></i></div></div>
+      <span class="gcount">${own}/${tot} ottenute</span><div class="gbar"><i style="width:${tot ? own / tot * 100 : 0}%"></i></div></div>
       <div class="grid">${cs.map(cardHTML).join('')}</div></section>`;
   }).join('');
 }
@@ -854,9 +859,9 @@ function updateGroupHeaders() {
   document.querySelectorAll('.group').forEach(g => {
     const k = g.querySelector('h3').textContent.trim();
     const all = (ui.sort === 'country' || ui.tipo === 'naz') ? base.filter(c => c.paese === k) : base.filter(c => String(c.anno) === k);
-    const own = all.filter(has).length;
-    g.querySelector('.gcount').textContent = own + '/' + all.length + ' ottenute';
-    g.querySelector('.gbar i').style.width = (all.length ? own / all.length * 100 : 0) + '%';
+    const own = cntOwn(all), tot = cntTot(all);
+    g.querySelector('.gcount').textContent = own + '/' + tot + ' ottenute';
+    g.querySelector('.gbar i').style.width = (tot ? own / tot * 100 : 0) + '%';
   });
 }
 
@@ -907,7 +912,7 @@ function openModal(id) {
             <div class="dd-menu">${ZECCHE_DE.map(([k, n]) => `<label><input type="checkbox" data-z="${k}" ${z.includes(k) ? 'checked' : ''}> <b>${k}</b> – ${n}</label>`).join('')}</div></div>` : ''}
           <div style="display:flex;align-items:center;gap:8px">Doppioni <div class="stepper"><button data-dop="-1">−</button><span id="dopN">${o.doppioni || 0}</span><button data-dop="1">+</button></div></div>
         </div>
-        ${zecche ? '<div style="font-size:12px;color:var(--grey-3);margin-top:8px">Le monete tedesche escono in 5 versioni, una per zecca (la lettera è sulla faccia nazionale).</div>' : ''}
+        ${zecche ? '<div style="font-size:12px;color:var(--grey-3);margin-top:8px">Le monete tedesche escono in 5 versioni, una per zecca (la lettera è sulla faccia nazionale). Ogni zecca in più che spunti conta come una moneta in più, sia nelle tue che nel totale.</div>' : ''}
         <textarea class="note" id="noteT" placeholder="Note personali (es. dove l'hai trovata, stato di conservazione…)">${esc(o.note || '')}</textarea>
       </div>`}
       ${c.iscrizione ? `<div class="m-desc" style="margin-bottom:12px"><h4>Iscrizione nazionale</h4>${esc(c.iscrizione)}</div>` : ''}
